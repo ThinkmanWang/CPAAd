@@ -1,4 +1,4 @@
-package com.thinkman.ad;
+package com.thinkman.ad.view;
 
 import android.content.Context;
 import android.graphics.Rect;

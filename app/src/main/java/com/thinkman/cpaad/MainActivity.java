@@ -15,8 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.thinkman.ad.ThinkWebView;
-import com.thinkman.ad.ThinkWebViewClient;
+import com.thinkman.ad.view.ThinkWebView;
+import com.thinkman.ad.view.ThinkWebViewClient;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
