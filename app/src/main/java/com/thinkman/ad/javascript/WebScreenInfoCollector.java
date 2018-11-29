@@ -3,6 +3,7 @@ package com.thinkman.ad.javascript;
 import android.webkit.JavascriptInterface;
 
 public class WebScreenInfoCollector {
+
     public static int sScreenInnerHeight;
     public static int sScreenInnerWidth;
     public static int sScrollX;
@@ -30,5 +31,10 @@ public class WebScreenInfoCollector {
     {
         sScrollX = paramInt1;
         sScrollY = paramInt2;
+    }
+
+    public interface OnWebScreenInfoListener {
+        void onInnerScreenInfo(int nWidth, int nHeight);
+        void onScrollInfo(int nScrollX, int nScrollY);
     }
 }
