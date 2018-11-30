@@ -29,9 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.wv_main)
     ThinkWebView m_wvMain = null;
-
-    Handler mhandler = new Handler();
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
