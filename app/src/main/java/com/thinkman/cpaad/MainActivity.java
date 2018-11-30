@@ -2,6 +2,7 @@ package com.thinkman.cpaad;
 
 import android.graphics.Bitmap;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 import com.thinkman.ad.javascript.WebScreenInfoCollector;
 import com.thinkman.ad.view.ThinkWebView;
 import com.thinkman.ad.view.ThinkWebViewClient;
+import com.thinkman.ad.view.utils.ScrollUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.wv_main)
     ThinkWebView m_wvMain = null;
+
+    Handler mhandler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,11 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_load)
     public void onLoadClick() {
-        this.m_wvMain.loadUrl("https://m.nuomi.com/webapp/tuan/flowdev?query=%E5%AE%B6%E6%94%BF&nmtradeid=2465&amp;from=CPS&format=3&us=xinyi01&nmcid=xinyi01&amp;cid=xinyi01");
+        this.m_wvMain.loadUrl("http://config.huina365.com:8545/status/proxy.do");
+//        this.m_wvMain.loadUrl("https://m.nuomi.com/webapp/tuan/flowdev?query=%E5%AE%B6%E6%94%BF&nmtradeid=2465&amp;from=CPS&format=3&us=xinyi01&nmcid=xinyi01&amp;cid=xinyi01");
     }
 
     @OnClick(R.id.btn_load_screen)
     public void onScreenInfoClick() {
-        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScreenInfoJs());
+//        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScreenInfoJs());
+//        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());
+//        this.m_wvMain.scrollTo(1024, 2048);
+
+        ScrollUtils.dispatchScrollEvent(mhandler, this.m_wvMain, 500, 700, 450, 100);
     }
 }
