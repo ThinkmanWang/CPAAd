@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.wv_main)
     ThinkWebView m_wvMain = null;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_load)
     public void onLoadClick() {
+//        this.m_wvMain.loadUrl("http://config.huina365.com:8545/status/index.do");
         this.m_wvMain.loadUrl("http://config.huina365.com:8545/status/proxy.do");
 //        this.m_wvMain.loadUrl("https://m.nuomi.com/webapp/tuan/flowdev?query=%E5%AE%B6%E6%94%BF&nmtradeid=2465&amp;from=CPS&format=3&us=xinyi01&nmcid=xinyi01&amp;cid=xinyi01");
     }
