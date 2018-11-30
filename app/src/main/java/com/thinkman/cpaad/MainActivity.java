@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 //        this.m_wvMain.loadUrl("https://m.nuomi.com/webapp/tuan/flowdev?query=%E5%AE%B6%E6%94%BF&nmtradeid=2465&amp;from=CPS&format=3&us=xinyi01&nmcid=xinyi01&amp;cid=xinyi01");
     }
 
-    @OnClick(R.id.btn_load_screen)
+    @OnClick(R.id.btn_scroll_screen)
     public void onScreenInfoClick() {
 //        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScreenInfoJs());
 //        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());

@@ -23,11 +23,11 @@
         android:text="TEST" />
 
     <Button
-        android:id="@+id/btn_load_screen"
+        android:id="@+id/btn_scroll_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/btn_load"
-        android:text="长宽" />
+        android:text="滑动" />
 
     <com.thinkman.ad.view.ThinkWebView
         android:id="@+id/wv_main"
