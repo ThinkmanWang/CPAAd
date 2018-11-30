@@ -11,12 +11,22 @@ public class WebScreenInfoCollector {
 
     public static String collectScreenInfoJs()
     {
-        return "javascript:(function() {   screenInfoCollector.setInnerScreenInfo(document.documentElement.clientWidth, document.documentElement.clientHeight);   alert('clientHeight ' + document.documentElement.clientHeight);   alert('height ' + window.screen.height);   alert('availHeight ' + window.screen.availHeight);})()";
+        return "javascript: (function() {\n" +
+                "    screenInfoCollector.setInnerScreenInfo(document.documentElement.clientWidth, document.documentElement.clientHeight);\n" +
+//                "    alert('clientHeight ' + document.documentElement.clientHeight);\n" +
+//                "    alert('height ' + window.screen.height);\n" +
+//                "    alert('availHeight ' + window.screen.availHeight);\n" +
+                "})()";
     }
 
     public static String collectScrollInfoJs()
     {
-        return "javascript:(function() {   var item = document.querySelector('.trade-detail-main');   if (item) {       screenInfoCollector.setScrollInfo(item.scrollLeft, item.scrollTop);   }})()";
+        return "javascript: (function() {\n" +
+                "    var item = document.querySelector('.trade-detail-main');\n" +
+                "    if (item) {\n" +
+                "        screenInfoCollector.setScrollInfo(item.scrollLeft, item.scrollTop);\n" +
+                "    }\n" +
+                "})()";
     }
 
     @JavascriptInterface

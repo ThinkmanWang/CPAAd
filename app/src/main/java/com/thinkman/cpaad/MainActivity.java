@@ -91,9 +91,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_scroll_screen)
     public void onScreenInfoClick() {
-//        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScreenInfoJs());
-//        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());
-//        this.m_wvMain.scrollTo(1024, 2048);
+        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScreenInfoJs());
+        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());
 
         TouchEventUtils.dispatchScrollEvent(this.m_wvMain, 500, 1800, 450, 100);
     }
