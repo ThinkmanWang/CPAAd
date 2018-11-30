@@ -96,6 +96,6 @@ public class MainActivity extends AppCompatActivity {
 //        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());
 //        this.m_wvMain.scrollTo(1024, 2048);
 
-        ScrollUtils.dispatchScrollEvent(mhandler, this.m_wvMain, 500, 700, 450, 100);
+        ScrollUtils.dispatchScrollEvent(this.m_wvMain, 500, 1800, 450, 100);
     }
 }
