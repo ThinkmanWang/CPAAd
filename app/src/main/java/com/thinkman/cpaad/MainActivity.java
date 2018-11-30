@@ -19,7 +19,7 @@ import android.widget.Toast;
 import com.thinkman.ad.javascript.WebScreenInfoCollector;
 import com.thinkman.ad.view.ThinkWebView;
 import com.thinkman.ad.view.ThinkWebViewClient;
-import com.thinkman.ad.view.utils.ScrollUtils;
+import com.thinkman.ad.view.utils.TouchEventUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -96,6 +96,6 @@ public class MainActivity extends AppCompatActivity {
 //        this.m_wvMain.loadUrl(WebScreenInfoCollector.collectScrollInfoJs());
 //        this.m_wvMain.scrollTo(1024, 2048);
 
-        ScrollUtils.dispatchScrollEvent(this.m_wvMain, 500, 1800, 450, 100);
+        TouchEventUtils.dispatchScrollEvent(this.m_wvMain, 500, 1800, 450, 100);
     }
 }

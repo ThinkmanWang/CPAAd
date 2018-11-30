@@ -5,7 +5,7 @@ import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class ScrollUtils {
+public class TouchEventUtils {
     public static Handler mHandler = new Handler();
 
     public static void dispatchScrollEvent(final View view, final int nStartX, final int nStartY, final int nEndX, final int nEndY) {
@@ -48,5 +48,20 @@ public class ScrollUtils {
         } catch (Exception ex) {
 
         }
+    }
+
+    public static void dispatchClieckEvent(final View view, final int nX, final int nY) {
+        final long downTime = SystemClock.uptimeMillis();
+        long eventTime = SystemClock.uptimeMillis();
+        MotionEvent event = MotionEvent.obtain(downTime, eventTime, MotionEvent.ACTION_DOWN, nX, nY, 0);
+        view.dispatchTouchEvent(event);
+
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                MotionEvent _event = MotionEvent.obtain(downTime, SystemClock.uptimeMillis() + 100, MotionEvent.ACTION_UP, nX, nY, 0);
+                view.dispatchTouchEvent(_event);
+            }
+        }, 100);
     }
 }
