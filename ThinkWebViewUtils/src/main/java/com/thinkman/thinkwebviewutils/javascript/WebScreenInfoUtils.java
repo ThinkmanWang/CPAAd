@@ -4,7 +4,7 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class WebScreenInfoCollector {
+public class WebScreenInfoUtils {
 
     public static OnWebScreenInfoListener mListener = null;
 
@@ -13,10 +13,7 @@ public class WebScreenInfoCollector {
         mListener = listener;
 
         webView.loadUrl("javascript: (function() {\n" +
-                "    screenInfoCollector.setInnerScreenInfo(document.documentElement.clientWidth, document.documentElement.clientHeight);\n" +
-//                "    alert('clientHeight ' + document.documentElement.clientHeight);\n" +
-//                "    alert('height ' + window.screen.height);\n" +
-//                "    alert('availHeight ' + window.screen.availHeight);\n" +
+                "    screenInfoUtils.setInnerScreenInfo(document.documentElement.clientWidth, document.documentElement.clientHeight);\n" +
                 "})()");
     }
 
