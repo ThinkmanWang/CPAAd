@@ -22,6 +22,7 @@ import com.thinkman.thinkutils.ThinkLog;
 import com.thinkman.thinkwebviewutils.javascript.WebScreenInfoCollector;
 import com.thinkman.thinkwebviewutils.view.ThinkWebView;
 import com.thinkman.thinkwebviewutils.view.ThinkWebViewClient;
+import com.thinkman.thinkwebviewutils.view.utils.TouchEventUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -105,19 +106,28 @@ public class PositionTest extends AppCompatActivity {
         public void onPageFinished(WebView paramWebView, String paramString) {
             super.onPageFinished(paramWebView, paramString);
 
-            if (true) {
-                mHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        WebScreenInfoCollector.collectScreenInfoJs(m_wvMain, new WebScreenInfoCollector.OnWebScreenInfoListener() {
-                            @Override
-                            public void onGetScreenInfo(int nWidth, int nHeight) {
-                                ThinkLog.debug("THINKMAN", "[" + nWidth + ":" + nHeight + "]");
-                            }
-                        });
-                    }
-                }, 1000);
-            }
+
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    WebScreenInfoCollector.collectScreenInfoJs(m_wvMain, new WebScreenInfoCollector.OnWebScreenInfoListener() {
+                        @Override
+                        public void onGetScreenInfo(int nWidth, int nHeight) {
+                            ThinkLog.debug("THINKMAN", "[" + nWidth + ":" + nHeight + "]");
+
+                            TouchEventUtils.scrollUp(m_wvMain);
+                        }
+                    });
+                }
+            }, 1000);
+
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    TouchEventUtils.scrollDown(m_wvMain);
+                }
+            }, 3000);
+
         }
 
         public void onPageStarted(WebView paramWebView, String paramString, Bitmap paramBitmap) {

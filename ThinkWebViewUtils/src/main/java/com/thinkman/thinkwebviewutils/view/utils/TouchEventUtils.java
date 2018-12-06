@@ -8,6 +8,35 @@ import android.view.View;
 public class TouchEventUtils {
     public static Handler mHandler = new Handler();
 
+    public static void scrollDown(final View view) {
+        scrollDown(view, 1080, 1920);
+    }
+
+    public static void scrollDown(final View view, int nWidth, int nHeight) {
+
+        final int nStartX = nWidth / 2;
+        final int nStartY = nHeight * 2 / 10;
+
+        final int nStopX = nWidth * 8 / 10;
+        final int nStopY = nHeight * 9 / 10;
+
+        dispatchScrollEvent(view, nStartX, nStartY, nStopX, nStopY);
+    }
+
+    public static void scrollUp(final View view) {
+        scrollUp(view, 1080, 1920);
+    }
+
+    public static void scrollUp(final View view, int nWidth, int nHeight) {
+        final int nStartX = nWidth * 8 / 10;
+        final int nStartY = nHeight * 9 / 10;
+
+        final int nStopX = nWidth / 2;
+        final int nStopY = nHeight * 2 / 10;
+
+        dispatchScrollEvent(view, nStartX, nStartY, nStopX, nStopY);
+    }
+
     public static void dispatchScrollEvent(final View view, final int nStartX, final int nStartY, final int nEndX, final int nEndY) {
         try {
             int nStepX = (nEndX - nStartX) / 10;
