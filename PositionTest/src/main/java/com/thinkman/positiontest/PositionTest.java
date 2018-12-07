@@ -18,8 +18,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.thinkman.thinkutils.RandomUtils;
 import com.thinkman.thinkutils.ThinkLog;
-import com.thinkman.thinkwebviewutils.javascript.WebScreenInfoCollector;
+import com.thinkman.thinkwebviewutils.javascript.PositionUtils;
+import com.thinkman.thinkwebviewutils.javascript.WebScreenInfoUtils;
 import com.thinkman.thinkwebviewutils.view.ThinkWebView;
 import com.thinkman.thinkwebviewutils.view.ThinkWebViewClient;
 import com.thinkman.thinkwebviewutils.view.utils.TouchEventUtils;
@@ -32,8 +34,8 @@ public class PositionTest extends AppCompatActivity {
     @BindView(R.id.wv_main)
     public ThinkWebView m_wvMain;
 
-    public static final String URL = "http://i.hao61.net/jump/pejt-1";
-
+    public static final String URL = "https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002";
+//    public static final String URL = "http://config.huina365.com:8545/status/index.do";
     Handler mHandler = new Handler();
 
     @Override
@@ -71,18 +73,9 @@ public class PositionTest extends AppCompatActivity {
             }
         });
 
-        WebSettings localWebSettings = this.m_wvMain.getSettings();
-        localWebSettings.setSupportZoom(false);
-        localWebSettings.setBuiltInZoomControls(false);
-        localWebSettings.setUseWideViewPort(true);
-        localWebSettings.setSupportMultipleWindows(false);
-        localWebSettings.setDomStorageEnabled(true);
-        localWebSettings.setJavaScriptEnabled(true);
-        localWebSettings.setGeolocationEnabled(false);
-        localWebSettings.setLoadWithOverviewMode(true);
-        localWebSettings.setSupportMultipleWindows(true);
-        localWebSettings.setLoadsImagesAutomatically(true);
-
+        WebSettings webSettings = this.m_wvMain.getSettings();
+        webSettings.setSupportZoom(false);
+        webSettings.setGeolocationEnabled(false);
         if (Build.VERSION.SDK_INT >= 21) {
             try {
                 this.m_wvMain.getSettings().setMixedContentMode(0);
@@ -91,7 +84,23 @@ public class PositionTest extends AppCompatActivity {
             }
         }
 
-        this.m_wvMain.addJavascriptInterface(new WebScreenInfoCollector(), "screenInfoCollector");
+        webSettings.setBuiltInZoomControls(false);
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.supportMultipleWindows();
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setLoadsImagesAutomatically(true);
+
+        webSettings.setAppCacheEnabled(true);
+        webSettings.setAllowContentAccess(true);
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
+        webSettings.setSavePassword(true);
+        webSettings.setSaveFormData(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+
+        this.m_wvMain.addJavascriptInterface(new WebScreenInfoUtils(), "screenInfoUtils");
+        this.m_wvMain.addJavascriptInterface(new PositionUtils(), "positionUtils");
     }
 
     class MyViewClient extends WebViewClient {
@@ -106,27 +115,46 @@ public class PositionTest extends AppCompatActivity {
         public void onPageFinished(WebView paramWebView, String paramString) {
             super.onPageFinished(paramWebView, paramString);
 
-
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    WebScreenInfoCollector.collectScreenInfoJs(m_wvMain, new WebScreenInfoCollector.OnWebScreenInfoListener() {
+                    WebScreenInfoUtils.collectScreenInfoJs(m_wvMain, new WebScreenInfoUtils.OnWebScreenInfoListener() {
                         @Override
                         public void onGetScreenInfo(int nWidth, int nHeight) {
                             ThinkLog.debug("THINKMAN", "[" + nWidth + ":" + nHeight + "]");
-
-                            TouchEventUtils.scrollUp(m_wvMain);
                         }
                     });
-                }
-            }, 1000);
 
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    TouchEventUtils.scrollDown(m_wvMain);
+                    PositionUtils.findFirstVisibleElementByClassName(m_wvMain, "item-info", new PositionUtils.PositionListener() {
+                        @Override
+                        public void onPositionGot(int nLeft, int nTop, int nWidth, int nHeight) {
+                            String szPos = String.format("(%d, %d, %d, %d)", nLeft, nTop, nWidth, nHeight);
+                            ThinkLog.debug("THINKMAN", szPos);
+
+                            int nX = nLeft + RandomUtils.random(0, nWidth);
+                            int nY = nTop + RandomUtils.random(0, nHeight);
+
+                            ThinkLog.debug("THINKMAN", "click at (" + nX + "," + nY + ")");
+                            TouchEventUtils.dispatchClieckEvent(m_wvMain, nX, nY);
+                        }
+                    });
+
                 }
             }, 3000);
+
+//            mHandler.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    TouchEventUtils.scrollUp(m_wvMain);
+//                }
+//            }, 4000);
+//
+//            mHandler.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    TouchEventUtils.scrollDown(m_wvMain);
+//                }
+//            }, 5000);
 
         }
 
@@ -145,6 +173,7 @@ public class PositionTest extends AppCompatActivity {
 
         public WebResourceResponse shouldInterceptRequest(WebView paramWebView, WebResourceRequest paramWebResourceRequest)
         {
+            ThinkLog.debug("THINKMAN", paramWebResourceRequest.getUrl().toString());
             return super.shouldInterceptRequest(paramWebView, paramWebResourceRequest);
         }
 
@@ -154,10 +183,8 @@ public class PositionTest extends AppCompatActivity {
         }
 
         public boolean shouldOverrideUrlLoading(WebView paramWebView, String paramString) {
+            ThinkLog.debug("THINKMAN", paramString);
             return false;
         }
-
-
-
     }
 }

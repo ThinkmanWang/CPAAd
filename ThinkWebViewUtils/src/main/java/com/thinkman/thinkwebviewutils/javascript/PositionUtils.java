@@ -29,6 +29,51 @@ public class PositionUtils {
                 "           return;" +
                 "       } " +
                 "   } " +
+                "   positionUtils.positionGot(0, 0, 0, 0); " +
+                "})()");
+    }
+
+    public static void findFirstVisibleElementByClassText(WebView webView, String szClsName, String szText, PositionListener listener) {
+        mListener = listener;
+
+        webView.loadUrl("javascript: (function() { " +
+                "   var elementList = document.getElementsByClassName(\"" + szClsName +"\"); " +
+                "   for (var i = 0; i < elementList.length; i++) { " +
+                "       var szText = elementList[i].innerText; " +
+                "       var nIndex = szText.indexOf(\"" + szText + "\"); " +
+                "       if (-1 == nIndex) { " +
+                "           continue; " +
+                "       } " +
+                "       " +
+                "       var rect = elementList[i].getBoundingClientRect(); " +
+                "       if (rect.top >= 0) { " +
+//                "           alert('FXXK ' + rect.left + ',' + rect.top + ',' + rect.width + ',' + rect.height); " +
+                "           positionUtils.positionGot(rect.left, rect.top, rect.width, rect.height); " +
+                "           return;" +
+                "       } " +
+                "   } " +
+                "   positionUtils.positionGot(0, 0, 0, 0); " +
+                "})()");
+    }
+
+    public static void findElementByClassText(WebView webView, String szClsName, String szText, PositionListener listener) {
+        mListener = listener;
+
+        webView.loadUrl("javascript: (function() { " +
+                "   var elementList = document.getElementsByClassName(\"" + szClsName +"\"); " +
+                "   for (var i = 0; i < elementList.length; i++) { " +
+                "       var szText = elementList[i].innerText; " +
+                "       var nIndex = szText.indexOf(\"" + szText + "\"); " +
+                "       if (-1 == nIndex) { " +
+                "           continue; " +
+                "       } " +
+                "       " +
+                "       var rect = elementList[i].getBoundingClientRect(); " +
+//                "     alert('FXXK ' + rect.left + ',' + rect.top + ',' + rect.width + ',' + rect.height); " +
+                "       positionUtils.positionGot(rect.left, rect.top, rect.width, rect.height); " +
+                "       return;" +
+                "   } " +
+                "   positionUtils.positionGot(0, 0, 0, 0); " +
                 "})()");
     }
 
