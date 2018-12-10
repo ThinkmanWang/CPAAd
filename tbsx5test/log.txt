@@ -1,0 +1,1075 @@
+--------- beginning of main
+12-10 07:42:28.511  1109  1109 I ConfigService: onDestroy
+12-10 07:42:31.269 15713 15713 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:42:31.275 15713 15713 D AndroidRuntime: CheckJNI is OFF
+12-10 07:42:31.295 15715 15715 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:42:31.303 15715 15715 D AndroidRuntime: CheckJNI is OFF
+12-10 07:42:31.341 15713 15713 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:42:31.365 15715 15715 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:42:31.403 15713 15713 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:42:31.429 15715 15715 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:42:31.437 15713 15713 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+12-10 07:42:31.440   784  1127 I ActivityManager: Force stopping com.thinkman.tbsx5test appid=10092 user=0: from pid 15713
+12-10 07:42:31.442 15713 15713 D AndroidRuntime: Shutting down VM
+12-10 07:42:31.473 15715 15715 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+12-10 07:42:31.475 15715 15715 D AndroidRuntime: Shutting down VM
+12-10 07:42:32.662 15760 15760 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:42:32.669 15760 15760 D AndroidRuntime: CheckJNI is OFF
+12-10 07:42:32.738 15760 15760 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:42:32.804 15760 15760 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:42:32.838 15760 15760 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+12-10 07:42:32.843   784   981 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.thinkman.tbsx5test/.MainActivity} from uid 2000 on display 0
+12-10 07:42:32.864 15129 15151 W SearchService: Abort, client detached.
+12-10 07:42:32.866 15760 15760 D AndroidRuntime: Shutting down VM
+12-10 07:42:32.868 15129 15279 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.speech.audio.x@a18db67
+12-10 07:42:32.868 15129 15325 E AudioRecord-JNI: Error -4 during AudioRecord native read
+12-10 07:42:32.866 15129 15129 I HotwordDetector: Closing mic
+12-10 07:42:32.918   784  1716 I ActivityManager: Start proc 15774:com.thinkman.tbsx5test/u0a92 for activity com.thinkman.tbsx5test/.MainActivity
+12-10 07:42:32.928   197 15327 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+12-10 07:42:32.928   197 15327 D audio_hw_primary: disable_snd_device: snd_device(61: voice-rec-mic)
+12-10 07:42:32.937 15129 15295 I MicroRecognitionRnrImpl: Stopping hotword detection.
+12-10 07:42:32.938 15129 15324 I MicroRecognitionRnrImpl: Detection finished
+12-10 07:42:32.942 15774 15774 I art     : Late-enabling -Xcheck:jni
+12-10 07:42:33.011  1805  1892 D GCoreFlp: FLP HAL exists but batch size is <= 0.  Disabling FLP HAL.
+12-10 07:42:33.086 15800 15800 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_dependencies_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.086 15800 15800 I dex2oat : dex2oat took 1.021ms (threads: 4) 
+12-10 07:42:33.090 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_dependencies_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_dependencies_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.413 15807 15807 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_0_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.413 15807 15807 I dex2oat : dex2oat took 1.097ms (threads: 4) 
+12-10 07:42:33.422 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_0_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_0_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.501 15814 15814 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_1_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.501 15814 15814 I dex2oat : dex2oat took 1.627ms (threads: 4) 
+12-10 07:42:33.506 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_1_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_1_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.580 15816 15816 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_2_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.580 15816 15816 I dex2oat : dex2oat took 970.364us (threads: 4) 
+12-10 07:42:33.585 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_2_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_2_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.653   784   880 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-10 07:42:33.713  1805  1805 V GmsNetworkLocationProvi: DISABLE
+12-10 07:42:33.730 15818 15818 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_3_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.730 15818 15818 I dex2oat : dex2oat took 1.021ms (threads: 4) 
+12-10 07:42:33.734 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_3_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_3_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.783  1596 15834 D PackageBroadcastService: Received broadcast action=android.intent.action.PACKAGE_CHANGED and uri=com.google.android.gms
+12-10 07:42:33.791  1596 15834 I PackageBroadcastService: Null package name or gms related package.  Ignoreing.
+12-10 07:42:33.793 15129 15835 I UpdateIcingCorporaServi: Updating corpora: APPS=com.google.android.gms, CONTACTS=MAYBE
+12-10 07:42:33.818 15831 15831 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_4_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.818 15831 15831 I dex2oat : dex2oat took 895.781us (threads: 4) 
+12-10 07:42:33.822 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_4_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_4_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.825  1596  2189 I Icing   : updateResources: need to parse f{com.google.android.gms}
+12-10 07:42:33.847 15129 15835 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 54 ms] updated apps [took 54 ms] 
+12-10 07:42:33.908 15843 15843 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_5_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.908 15843 15843 I dex2oat : dex2oat took 888.073us (threads: 4) 
+12-10 07:42:33.912 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_5_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_5_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:33.939  1805  1805 V GmsNetworkLocationProvi: ENABLE
+12-10 07:42:33.941  1805  4037 V GmsNetworkLocationProvi: onSetRequest: ProviderRequestUnbundled, reportLocation is true and interval is 86400000
+12-10 07:42:33.941  1805  1805 V GmsNetworkLocationProvi: SET-REQUEST
+12-10 07:42:33.941  1805  1805 V GmsNetworkLocationProvi: in Handler: ProviderRequestUnbundled, reportLocation is true and interval is 86400000
+12-10 07:42:33.952   784   978 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@11c6fcc}
+12-10 07:42:33.954   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:42:33.954   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:42:33.961   784   796 D ActivityRecognitionProxy: AR HW instance not available, binding will be a no-op.
+12-10 07:42:33.972   784   795 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@11c6fcc}
+12-10 07:42:33.982 15849 15849 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_6_apk.apk@classes.dex: Permission denied
+12-10 07:42:33.982 15849 15849 I dex2oat : dex2oat took 880.260us (threads: 4) 
+12-10 07:42:33.985 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_6_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_6_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:34.056 15852 15852 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_7_apk.apk@classes.dex: Permission denied
+12-10 07:42:34.056 15852 15852 I dex2oat : dex2oat took 835.677us (threads: 4) 
+12-10 07:42:34.060 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_7_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_7_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:34.129 15854 15854 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_8_apk.apk@classes.dex: Permission denied
+12-10 07:42:34.130 15854 15854 I dex2oat : dex2oat took 1.021ms (threads: 4) 
+12-10 07:42:34.134 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_8_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_8_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:34.232 15856 15856 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_9_apk.apk@classes.dex: Permission denied
+12-10 07:42:34.232 15856 15856 I dex2oat : dex2oat took 861.718us (threads: 4) 
+12-10 07:42:34.238 15774 15774 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-1/split_lib_slice_9_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-1@split_lib_slice_9_apk.apk@classes.dex) because non-0 exit status
+12-10 07:42:34.242 15774 15774 W System  : ClassLoader referenced unknown path: /data/app/com.thinkman.tbsx5test-1/lib/arm
+12-10 07:42:34.258 15774 15774 I InstantRun: starting instant run server: is main process
+12-10 07:42:34.468 15774 15867 W System.err: java.lang.SecurityException: getDeviceId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:42:34.468 15774 15867 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:42:34.468 15774 15867 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:42:34.468 15774 15867 W System.err: 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:4207)
+12-10 07:42:34.468 15774 15867 W System.err: 	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:706)
+12-10 07:42:34.469 15774 15867 W System.err: 	at com.tencent.smtt.utils.b.c(Unknown Source)
+12-10 07:42:34.469 15774 15867 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:42:34.469 15774 15867 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:42:34.469 15774 15867 W System.err: 	at com.tencent.smtt.sdk.aw.handleMessage(Unknown Source)
+12-10 07:42:34.469 15774 15867 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:42:34.469 15774 15867 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:42:34.469 15774 15867 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:42:34.682 15774 15774 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+12-10 07:42:34.790 15774 15774 I art     : Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>
+12-10 07:42:34.790 15774 15774 I art     : Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>
+12-10 07:42:34.802  1805  1954 W System.err: java.net.ConnectException: failed to connect to www.google.com/31.13.73.17 (port 443) after 60000ms: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:42:34.803  1805  1954 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:234)
+12-10 07:42:34.803  1805  1954 W System.err: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:171)
+12-10 07:42:34.803  1805  1954 W System.err: 	at libcore.io.IoBridge.connect(IoBridge.java:122)
+12-10 07:42:34.803  1805  1954 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+12-10 07:42:34.803  1805  1954 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:452)
+12-10 07:42:34.803  1805  1954 W System.err: 	at java.net.Socket.connect(Socket.java:884)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:117)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectRawSocket(SocketConnector.java:160)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:79)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.Connection.connect(Connection.java:143)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+12-10 07:42:34.803  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:245)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:933)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:775)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:676)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:660)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.r.a.b.a.b.g(SourceFile:126)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.r.a.b.a.b.c(SourceFile:172)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.y.a.d.run(SourceFile:434)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.y.a.c.c(SourceFile:230)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.y.a.c.run(SourceFile:204)
+12-10 07:42:34.804  1805  1954 W System.err: 	at com.google.r.a.c.b.run(SourceFile:96)
+12-10 07:42:34.804  1805  1954 W System.err: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:42:34.805  1805  1954 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+12-10 07:42:34.805  1805  1954 W System.err: 	... 29 more
+12-10 07:42:35.025 15774 15774 I WebViewFactory: Loading com.google.android.webview version 44.0.2403.117 (code 246011700)
+12-10 07:42:35.064 15774 15774 W System  : ClassLoader referenced unknown path: /system/app/WebViewGoogle/lib/arm
+12-10 07:42:35.075 15774 15774 I LibraryLoader: Time to load native libraries: 5 ms (timestamps 2761-2766)
+12-10 07:42:35.075 15774 15774 I LibraryLoader: Expected native library version number "",actual native library version number ""
+12-10 07:42:35.094 15774 15774 V WebViewChromiumFactoryProvider: Binding Chromium to main looper Looper (main, tid 1) {9431658}
+12-10 07:42:35.095 15774 15774 I LibraryLoader: Expected native library version number "",actual native library version number ""
+12-10 07:42:35.095 15774 15774 I chromium: [INFO:library_loader_hooks.cc(120)] Chromium logging enabled: level = 0, default verbosity = 0
+12-10 07:42:35.104 15774 15774 I BrowserStartupController: Initializing chromium process, singleProcess=true
+12-10 07:42:35.105 15774 15774 W art     : Attempt to remove non-JNI local reference, dumping thread
+12-10 07:42:35.106 15774 15774 E SysUtils: ApplicationContext is null in ApplicationStatus
+12-10 07:42:35.127 15774 15774 W chromium: [WARNING:resource_bundle.cc(285)] locale_file_path.empty()
+12-10 07:42:35.136 15774 15774 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+12-10 07:42:35.136 15774 15774 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+12-10 07:42:35.137 15774 15774 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 10/21/15, 369a2ea, I96aee987eb
+12-10 07:42:35.207 15774 15894 W AudioManagerAndroid: Requires BLUETOOTH permission
+12-10 07:42:35.228  1575  1575 W Binder_5: type=1400 audit(0.0:8128): avc: denied { ioctl } for path="socket:[498914]" dev="sockfs" ino=498914 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.228  1575  1575 W Binder_5: type=1400 audit(0.0:8129): avc: denied { ioctl } for path="socket:[498914]" dev="sockfs" ino=498914 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.251 15774 15774 W art     : Attempt to remove non-JNI local reference, dumping thread
+12-10 07:42:35.261 15774 15774 W AwContents: onDetachedFromWindow called when already detached. Ignoring
+12-10 07:42:35.292 15774 15774 D THINKMAN: [2018-12-10 07:42:35] MainActivity.onCreate():32    Hello World
+12-10 07:42:35.378   531   531 W Binder_4: type=1400 audit(0.0:8130): avc: denied { ioctl } for path="socket:[498924]" dev="sockfs" ino=498924 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.387 15774 15905 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+12-10 07:42:35.378   531   531 W Binder_4: type=1400 audit(0.0:8131): avc: denied { ioctl } for path="socket:[498924]" dev="sockfs" ino=498924 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.418  1541  1541 W Binder_7: type=1400 audit(0.0:8132): avc: denied { ioctl } for path="socket:[499939]" dev="sockfs" ino=499939 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.418  1541  1541 W Binder_7: type=1400 audit(0.0:8133): avc: denied { ioctl } for path="socket:[499939]" dev="sockfs" ino=499939 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.423 15774 15892 W chromium: [WARNING:data_reduction_proxy_config.cc(423)] SPDY proxy OFF at startup
+12-10 07:42:35.492 15774 15905 I OpenGLRenderer: Initialized EGL, version 1.4
+12-10 07:42:35.607 15774 15774 W art     : Before Android 4.1, method int android.support.v7.widget.DropDownListView.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+12-10 07:42:35.648  1663  1663 W Binder_8: type=1400 audit(0.0:8134): avc: denied { ioctl } for path="socket:[498932]" dev="sockfs" ino=498932 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.648  1663  1663 W Binder_8: type=1400 audit(0.0:8135): avc: denied { ioctl } for path="socket:[498932]" dev="sockfs" ino=498932 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.658  1716  1716 W Binder_A: type=1400 audit(0.0:8136): avc: denied { ioctl } for path="socket:[498931]" dev="sockfs" ino=498931 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.658  1716  1716 W Binder_A: type=1400 audit(0.0:8137): avc: denied { ioctl } for path="socket:[498931]" dev="sockfs" ino=498931 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:42:35.652   784   803 I ActivityManager: Displayed com.thinkman.tbsx5test/.MainActivity: +2s756ms
+12-10 07:42:35.675  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:42:36.001 15774 15774 W BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 15774
+12-10 07:42:36.060 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://hiphotos.bdimg.com/bainuo/wh%3D690%2C460%3Bq%3D90%3Bc%3Dnuomi%2C95%2C95/sign=5d906bdb39fae6cd0ce1a36736832310/b58f8c5494eef01ff0929229ecfe9925bd317d5c.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.061 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://hiphotos.bdimg.com/bainuo/wh%3D690%2C460%3Bq%3D90%3Bc%3Dnuomi%2C95%2C95/sign=035e76cb733e6709be554df902f7b309/a044ad345982b2b7747ab3283dadcbef77099b71.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.062 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/nuomi/pic/item/d8f9d72a6059252d84efd2b1339b033b5ab5b98f.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.062 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C0%2C650%2C490%3Bw%3D640%3Bq%3D84/sign=b065bcd14ea7d933abe7be33907bfd23/00e93901213fb80ec43ae7123ad12f2eb8389408.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.063 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C0%2C712%2C960%3Bw%3D640%3Bq%3D89/sign=fd5dd3cabbfd5266b36466549628bb1b/d1a20cf431adcbef0a9fa127a1af2edda3cc9f6c.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.063 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://c.hiphotos.baidu.com/fengchao_lbp/pic/item/bf096b63f6246b608e983df0e7f81a4c500fa2a4.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.064 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C46%2C640%2C388%3Bw%3D230%3Bq%3D80/sign=fbffeea68282b90129e299734ebd8543/a8ec8a13632762d0c300613ea8ec08fa513dc671.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.065 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C6%2C475%2C288%3Bw%3D230%3Bq%3D99/sign=8dd2ce7a04d79123f4afce34900475b4/f636afc379310a55f44b4086bf4543a982261050.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.066 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D4%2C0%2C692%2C420%3Bw%3D230%3Bq%3D99/sign=9c61d5471fce36d3b64bd97007c716b7/c995d143ad4bd113b4249eaf50afa40f4afb0545.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.067 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D6%2C17%2C895%2C543%3Bw%3D230%3Bq%3D79/sign=a38733fde7fe9925df433310099e72ee/c8177f3e6709c93de96125cf983df8dcd1005472.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.067 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C46%2C640%2C388%3Bw%3D230%3Bq%3D80/sign=fbffeea68282b90129e299734ebd8543/a8ec8a13632762d0c300613ea8ec08fa513dc671.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.068 15774 15774 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002' was loaded over HTTPS, but requested an insecure image 'http://e.hiphotos.baidu.com/bainuo/crop%3D0%2C0%2C470%2C285%3Bw%3D230%3Bq%3D80/sign=711e2e445443fbf2d163fc638d4ee6b0/78310a55b319ebc400077dd58526cffc1e17167a.jpg'. This request has been blocked; the content must be served over HTTPS.", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (0)
+12-10 07:42:36.530 15774 15774 I chromium: [INFO:CONSOLE(737)] "Uncaught TypeError: Object.assign is not a function", source: https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002 (737)
+12-10 07:42:36.873 15774 15774 I chromium: [INFO:CONSOLE(17)] "Uncaught TypeError: Cannot read property 'logid' of undefined", source: https://se.nuomi.com/phasterse/static/js/base_98299e6.js (17)
+12-10 07:42:37.000 15774 15867 W System.err: java.lang.SecurityException: getDeviceId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:42:37.000 15774 15867 W System.err: 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:4207)
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:706)
+12-10 07:42:37.000 15774 15867 W System.err: 	at com.tencent.smtt.utils.b.c(Unknown Source)
+12-10 07:42:37.000 15774 15867 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:42:37.000 15774 15867 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:42:37.000 15774 15867 W System.err: 	at com.tencent.smtt.sdk.aw.handleMessage(Unknown Source)
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:42:37.000 15774 15867 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:42:43.040 15129 15959 W CronetSyncConnectionRcs: Upload content type not set.
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: Unknown exception from Cronet.
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: java.io.IOException: System error: net::ERR_CONNECTION_REFUSED(-102)
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.getException(ChromiumUrlRequest.java:185)
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.d(CronetSyncWaitableListener.java:126)
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.c(CronetSyncWaitableListener.java:101)
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.b(CronetSyncWaitableListener.java:84)
+12-10 07:42:43.077 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.finish(ChromiumUrlRequest.java:4501)
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: Unknown exception from Cronet.
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: java.io.IOException: System error: net::ERR_CONNECTION_REFUSED(-102)
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.getException(ChromiumUrlRequest.java:185)
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.d(CronetSyncWaitableListener.java:126)
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.b(CronetSyncWaitableListener.java:91)
+12-10 07:42:43.125 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.finish(ChromiumUrlRequest.java:4501)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: Unable to send logs
+12-10 07:42:43.127 15129 15959 W EventLoggerService: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 65580 | Error code: 655369
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:146)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.br(S3LogSender.java:79)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.a(EventLoggerService.java:575)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.i(EventLoggerService.java:320)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.gB(EventLoggerService.java:245)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.onHandleIntent(EventLoggerService.java:236)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:66)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 655369
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.n.a(HttpLogEntry.java:84)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.e.a(CronetSyncResponseInfo.java:51)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:178)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:39)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.aac(HttpConnectionImpl.java:165)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.a(HttpConnectionImpl.java:158)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.b(S3RequestStream.java:66)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.a(S3RequestStream.java:52)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:144)
+12-10 07:42:43.127 15129 15959 W EventLoggerService: 	... 9 more
+12-10 07:42:43.127 15129 15959 W ErrorReporter: reportError [type: 211, code: 65580]: Error code: 65580 | Error code: 655369
+12-10 07:42:43.178 15473 15509 D Finsky  : [1400] AppStatesReplicator.handleContentSyncResponse: Completed 0 account content syncs with 0 successful.
+12-10 07:42:43.180 15473 15473 D Finsky  : [1] ContentSyncService$5.onFinished: Installation state replication succeeded.
+12-10 07:42:54.709   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=357967421, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:43:12.049   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=357984761, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:43:30.869   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358003581, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:43:35.714  1439  4271 I Keyboard.Facilitator.LanguageModelFlusher: run()
+12-10 07:43:35.714  1439  4271 I Keyboard.Facilitator: flushDynamicLanguageModels()
+12-10 07:43:35.745  1109  1109 I ConfigService: onCreate
+12-10 07:43:35.899   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358008612, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:43:40.794  1109  1109 I ConfigService: onDestroy
+12-10 07:43:54.710   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358027422, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:44:18.199   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358050911, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:44:37.029   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358069741, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:44:47.094 16098 16098 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:47.102 16098 16098 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:47.173 16098 16098 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:47.263 16098 16098 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:47.300 16098 16098 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+12-10 07:44:47.304   784  1663 I ActivityManager: Force stopping com.thinkman.tbsx5test appid=10092 user=0: from pid 16098
+12-10 07:44:47.304   784  1663 I ActivityManager: Killing 15774:com.thinkman.tbsx5test/u0a92 (adj 0): stop com.thinkman.tbsx5test
+12-10 07:44:47.344   784   980 D GraphicsStats: Buffer count: 5
+12-10 07:44:47.345   784   980 I WindowState: WIN DEATH: Window{97ec3e8 u0 com.thinkman.tbsx5test/com.thinkman.tbsx5test.MainActivity}
+12-10 07:44:47.510   784  1663 E libprocessgroup: failed to kill 1 processes for processgroup 15774
+12-10 07:44:47.511   784  1663 D ActivityManager: cleanUpApplicationRecord -- 15774
+12-10 07:44:47.511   784  1663 W ActivityManager: Force removing ActivityRecord{cece96b u0 com.thinkman.tbsx5test/.MainActivity t263}: app died, no saved state
+12-10 07:44:47.526 16098 16098 D AndroidRuntime: Shutting down VM
+12-10 07:44:47.526   784   794 W ActivityManager: Spurious death for ProcessRecord{39a2afb 0:com.thinkman.tbsx5test/u0a92}, curProc for 15774: null
+12-10 07:44:47.602   784   795 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15774 uid 10092
+12-10 07:44:47.603  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:44:47.598   795   795 W Binder_2: type=1400 audit(0.0:8138): avc: denied { ioctl } for path="socket:[17428]" dev="sockfs" ino=17428 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:47.598   795   795 W Binder_2: type=1400 audit(0.0:8139): avc: denied { ioctl } for path="socket:[17428]" dev="sockfs" ino=17428 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:47.679 15129 15129 W LocationOracleImpl: Best location was null
+12-10 07:44:47.726 15129 16120 I MicroRecognitionRnrImpl: Starting detection.
+12-10 07:44:47.729 15129 16121 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.speech.audio.x@217b4c4
+12-10 07:44:47.732   197 16124 I AudioFlinger: AudioFlinger's thread 0xb28c0000 ready to run
+12-10 07:44:47.736   784   793 I art     : Background partial concurrent mark sweep GC freed 85841(4MB) AllocSpace objects, 5(100KB) LOS objects, 33% free, 30MB/46MB, paused 1.739ms total 124.725ms
+12-10 07:44:47.743 15129 16121 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.speech.audio.x@217b4c4
+12-10 07:44:47.752   197 16124 D audio_hw_primary: select_devices: out_snd_device(0: none) in_snd_device(61: voice-rec-mic)
+12-10 07:44:47.752   197 16124 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(61) acdb_id(62)
+12-10 07:44:47.752   197 16124 D         : Failed to fetch the lookup information of the device 0000003E 
+12-10 07:44:47.752   197 16124 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+12-10 07:44:47.752   197 16124 D audio_hw_primary: enable_snd_device: snd_device(61: voice-rec-mic)
+12-10 07:44:47.758   197 16124 D audio_hw_primary: enable_audio_route: apply and update mixer path: audio-record
+12-10 07:44:47.761  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:44:47.793  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:44:47.808  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:44:47.843  1805  1892 D GCoreFlp: FLP HAL exists but batch size is <= 0.  Disabling FLP HAL.
+12-10 07:44:47.843 15129 15129 I HotwordWorkerImpl: onReady
+12-10 07:44:47.851   784   795 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@ec418cb}
+12-10 07:44:47.853   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:44:47.853   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:44:47.855  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:44:47.881   784   795 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@ec418cb}
+12-10 07:44:47.883   784 15779 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@ec418cb}
+12-10 07:44:47.884   784   906 D WifiScanningService: Pending scan removed, handler=334, period=0
+12-10 07:44:47.890   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:44:47.890   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:44:47.901   784   981 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@ec418cb}
+12-10 07:44:48.138  1508  1775 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-10 07:44:48.509   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358081221, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:44:48.789  1805  1953 W System.err: java.net.ConnectException: failed to connect to www.google.com/31.13.73.17 (port 443) after 60000ms: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:44:48.790  1805  1953 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:234)
+12-10 07:44:48.790  1805  1953 W System.err: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:171)
+12-10 07:44:48.790  1805  1953 W System.err: 	at libcore.io.IoBridge.connect(IoBridge.java:122)
+12-10 07:44:48.790  1805  1953 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+12-10 07:44:48.791  1805  1953 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:452)
+12-10 07:44:48.791  1805  1953 W System.err: 	at java.net.Socket.connect(Socket.java:884)
+12-10 07:44:48.791  1805  1953 W System.err: 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:117)
+12-10 07:44:48.791  1805  1953 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectRawSocket(SocketConnector.java:160)
+12-10 07:44:48.791  1805  1953 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:79)
+12-10 07:44:48.791  1805  1953 W System.err: 	at com.android.okhttp.Connection.connect(Connection.java:143)
+12-10 07:44:48.791  1805  1953 W System.err: 	at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+12-10 07:44:48.792  1805  1953 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:245)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:933)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:775)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:676)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:660)
+12-10 07:44:48.793  1805  1953 W System.err: 	at com.google.r.a.b.a.b.g(SourceFile:126)
+12-10 07:44:48.794  1805  1953 W System.err: 	at com.google.r.a.b.a.b.c(SourceFile:172)
+12-10 07:44:48.794  1805  1953 W System.err: 	at com.google.y.a.d.run(SourceFile:434)
+12-10 07:44:48.794  1805  1953 W System.err: 	at com.google.y.a.c.c(SourceFile:230)
+12-10 07:44:48.794  1805  1953 W System.err: 	at com.google.y.a.c.run(SourceFile:204)
+12-10 07:44:48.794  1805  1953 W System.err: 	at com.google.r.a.c.b.run(SourceFile:96)
+12-10 07:44:48.794  1805  1953 W System.err: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:44:48.796  1805  1953 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+12-10 07:44:48.796  1805  1953 W System.err: 	... 29 more
+12-10 07:44:52.064 16143 16143 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:52.071 16143 16143 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:52.133 16143 16143 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:52.193 16143 16143 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:52.228 16143 16143 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:44:52.239 16143 16143 I art     : System.exit called, status: 0
+12-10 07:44:52.239 16143 16143 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:44:53.408 16158 16158 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:53.415 16158 16158 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:53.475 16158 16158 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:53.537 16158 16158 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:53.573 16158 16158 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:44:53.584 16158 16158 I art     : System.exit called, status: 0
+12-10 07:44:53.584 16158 16158 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:44:57.246 16172 16172 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:57.250 16170 16170 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:57.253 16172 16172 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:57.257 16170 16170 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:57.315 16172 16172 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:57.319 16170 16170 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:57.375 16172 16172 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:57.397 16170 16170 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:57.410 16172 16172 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:44:57.419 16172 16172 I art     : System.exit called, status: 0
+12-10 07:44:57.419 16172 16172 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:44:57.441 16170 16170 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+12-10 07:44:57.445 16170 16170 D AndroidRuntime: Shutting down VM
+12-10 07:44:57.468 16196 16196 W sh      : type=1400 audit(0.0:8140): avc: denied { ioctl } for path="socket:[500328]" dev="sockfs" ino=500328 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:57.468 16196 16196 W sh      : type=1400 audit(0.0:8141): avc: denied { ioctl } for path="socket:[500328]" dev="sockfs" ino=500328 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:57.478 16196 16196 W sh      : type=1400 audit(0.0:8142): avc: denied { ioctl } for path="socket:[500328]" dev="sockfs" ino=500328 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:57.478 16196 16196 W sh      : type=1400 audit(0.0:8143): avc: denied { ioctl } for path="socket:[500328]" dev="sockfs" ino=500328 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.405 16196 16196 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:58.413 16196 16196 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:58.475 16196 16196 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:58.537 16196 16196 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:58.574 16196 16196 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:44:58.586   198   198 I installd: free_cache(58799) avail 27721207808
+12-10 07:44:58.578 15779 15779 W Binder_C: type=1400 audit(0.0:8144): avc: denied { ioctl } for path="socket:[500374]" dev="sockfs" ino=500374 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.578 15779 15779 W Binder_C: type=1400 audit(0.0:8145): avc: denied { ioctl } for path="socket:[500374]" dev="sockfs" ino=500374 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.616 16196 16196 I art     : System.exit called, status: 0
+12-10 07:44:58.616 16196 16196 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:44:58.638 16207 16207 W sh      : type=1400 audit(0.0:8146): avc: denied { ioctl } for path="socket:[500377]" dev="sockfs" ino=500377 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.638 16207 16207 W sh      : type=1400 audit(0.0:8147): avc: denied { ioctl } for path="socket:[500377]" dev="sockfs" ino=500377 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.648 16207 16207 W sh      : type=1400 audit(0.0:8148): avc: denied { ioctl } for path="socket:[500377]" dev="sockfs" ino=500377 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:58.648 16207 16207 W sh      : type=1400 audit(0.0:8149): avc: denied { ioctl } for path="socket:[500377]" dev="sockfs" ino=500377 ioctlcmd=5401 scontext=u:r:shell:s0 tcontext=u:r:adbd:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:59.575 16207 16207 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:44:59.582 16207 16207 D AndroidRuntime: CheckJNI is OFF
+12-10 07:44:59.645 16207 16207 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:44:59.714 16207 16207 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:44:59.754 16207 16207 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:44:59.762   198   198 I installd: free_cache(473697) avail 27721150464
+12-10 07:44:59.758 15779 15779 W Binder_C: type=1400 audit(0.0:8150): avc: denied { ioctl } for path="socket:[499059]" dev="sockfs" ino=499059 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:59.758 15779 15779 W Binder_C: type=1400 audit(0.0:8151): avc: denied { ioctl } for path="socket:[499059]" dev="sockfs" ino=499059 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:44:59.864 16207 16207 I art     : System.exit called, status: 0
+12-10 07:44:59.864 16207 16207 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:45:00.819 16218 16218 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:45:00.826 16218 16218 D AndroidRuntime: CheckJNI is OFF
+12-10 07:45:00.885 16218 16218 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:45:00.945 16218 16218 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:45:00.979 16218 16218 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+12-10 07:45:01.236   784   829 D PackageInstaller: Inherited files: [/data/app/com.thinkman.tbsx5test-1/split_lib_dependencies_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_0_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_1_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_3_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_4_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_5_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_6_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_7_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_8_apk.apk, /data/app/com.thinkman.tbsx5test-1/split_lib_slice_9_apk.apk, /data/app/com.thinkman.tbsx5test-1/oat/arm/base.odex]
+12-10 07:45:01.241   784   829 D PackageInstaller: Linked 11 files into /data/app/vmdl1633592159.tmp
+12-10 07:45:01.314 15473 15473 D Finsky  : [1] PackageVerificationReceiver.onReceive: Verification requested, id = 111
+12-10 07:45:01.317 15473 15473 D Finsky  : [1] WorkerTask.onPreExecute: Verification Requested for id = 111, data=file:///data/app/vmdl1633592159.tmp flags=118 fromVerificationActivity=false
+12-10 07:45:01.321 15473 15512 D Finsky  : [1402] PackageVerificationService.getPackageInfo: Cannot read archive for file:///data/app/vmdl1633592159.tmp in request id=111
+12-10 07:45:01.327 15473 15473 D Finsky  : [1] PackageVerificationReceiver.onReceive: Verification requested, id = 111
+12-10 07:45:01.367   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_EXTERNAL_STORAGE in package: com.thinkman.tbsx5test at: Binary XML file line #20
+12-10 07:45:01.367   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.thinkman.tbsx5test at: Binary XML file line #23
+12-10 07:45:01.368   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_WIFI_STATE in package: com.thinkman.tbsx5test at: Binary XML file line #43
+12-10 07:45:01.368   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_NETWORK_STATE in package: com.thinkman.tbsx5test at: Binary XML file line #45
+12-10 07:45:01.368   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_EXTERNAL_STORAGE in package: com.thinkman.tbsx5test at: Binary XML file line #48
+12-10 07:45:01.368   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_NETWORK_STATE in package: com.thinkman.tbsx5test at: Binary XML file line #49
+12-10 07:45:01.369   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.ACCESS_WIFI_STATE in package: com.thinkman.tbsx5test at: Binary XML file line #50
+12-10 07:45:01.369   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.INTERNET in package: com.thinkman.tbsx5test at: Binary XML file line #51
+12-10 07:45:01.377   784   809 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_PHONE_STATE in package: com.thinkman.tbsx5test at: Binary XML file line #52
+12-10 07:45:01.733   784   797 I ActivityManager: Force stopping com.thinkman.tbsx5test appid=10092 user=-1: uninstall pkg
+12-10 07:45:01.865   784   809 I PackageManager: Package com.thinkman.tbsx5test codePath changed from /data/app/com.thinkman.tbsx5test-1 to /data/app/com.thinkman.tbsx5test-2; Retaining data and using new
+12-10 07:45:01.865   784   809 W PackageManager: Code path for com.thinkman.tbsx5test changing from /data/app/com.thinkman.tbsx5test-1 to /data/app/com.thinkman.tbsx5test-2
+12-10 07:45:01.865   784   809 W PackageManager: Resource path for com.thinkman.tbsx5test changing from /data/app/com.thinkman.tbsx5test-1 to /data/app/com.thinkman.tbsx5test-2
+12-10 07:45:01.865   784   797 I ActivityManager: Force stopping com.thinkman.tbsx5test appid=10092 user=-1: replace pkg
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.OVERRIDE_WIFI_CONFIG to package com.thinkman.tbsx5test (protectionLevel=18 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.thinkman.tbsx5test (protectionLevel=18 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.INSTALL_PACKAGES to package com.thinkman.tbsx5test (protectionLevel=18 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.CLEAR_APP_USER_DATA to package com.thinkman.tbsx5test (protectionLevel=258 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.thinkman.tbsx5test (protectionLevel=18 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.DEVICE_POWER to package com.thinkman.tbsx5test (protectionLevel=2 flags=0x3848bf46)
+12-10 07:45:01.973   784   809 W PackageManager: Not granting permission android.permission.WRITE_SECURE_SETTINGS to package com.thinkman.tbsx5test (protectionLevel=50 flags=0x3848bf46)
+12-10 07:45:01.974   784   809 W PackageManager: Not granting permission android.permission.INJECT_EVENTS to package com.thinkman.tbsx5test (protectionLevel=2 flags=0x3848bf46)
+12-10 07:45:02.082   784   809 W Settings: Setting install_non_market_apps has moved from android.provider.Settings.Global to android.provider.Settings.Secure, returning read-only value.
+12-10 07:45:02.084   784   809 I art     : Starting a blocking GC Explicit
+12-10 07:45:02.199   784   809 I art     : Explicit concurrent mark sweep GC freed 120287(6MB) AllocSpace objects, 57(1300KB) LOS objects, 33% free, 30MB/46MB, paused 1.522ms total 108.194ms
+12-10 07:45:02.245   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/base.apk, retcode=-1
+12-10 07:45:02.246   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_dependencies_apk.apk, retcode=-1
+12-10 07:45:02.247   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_0_apk.apk, retcode=-1
+12-10 07:45:02.248   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_1_apk.apk, retcode=-1
+12-10 07:45:02.250   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_2_apk.apk, retcode=-1
+12-10 07:45:02.252   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_3_apk.apk, retcode=-1
+12-10 07:45:02.253   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_4_apk.apk, retcode=-1
+12-10 07:45:02.254   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_5_apk.apk, retcode=-1
+12-10 07:45:02.255   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_6_apk.apk, retcode=-1
+12-10 07:45:02.255   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_7_apk.apk, retcode=-1
+12-10 07:45:02.256   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_8_apk.apk, retcode=-1
+12-10 07:45:02.257   784   809 W PackageManager: Couldn't remove dex file for package:  at location /data/app/com.thinkman.tbsx5test-1/split_lib_slice_9_apk.apk, retcode=-1
+12-10 07:45:02.258   198   198 E installd: Couldn't opendir /data/app/vmdl1633592159.tmp: No such file or directory
+12-10 07:45:02.262 16218 16218 I art     : System.exit called, status: 0
+12-10 07:45:02.262 16218 16218 I AndroidRuntime: VM exiting with result code 0.
+12-10 07:45:02.262   784   809 I ActivityManager: Force stopping com.thinkman.tbsx5test appid=10092 user=0: pkg removed
+12-10 07:45:02.299   784   784 D JobSchedulerService: Receieved: android.intent.action.PACKAGE_REMOVED
+12-10 07:45:02.306   784   880 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-10 07:45:02.346   784   880 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-10 07:45:02.365  1495  1495 D CarrierServiceBindHelper: Receive action: android.intent.action.PACKAGE_REMOVED
+12-10 07:45:02.410   784   880 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-10 07:45:02.429  1109  1109 E NetworkScheduler.SchedulerReceiver: Invalid parameter app
+12-10 07:45:02.429  1109  1109 E NetworkScheduler.SchedulerReceiver: Invalid package name : Perhaps you didn't include a PendingIntent in the extras?
+12-10 07:45:02.482  1596 16248 D PackageBroadcastService: Received broadcast action=android.intent.action.PACKAGE_REMOVED and uri=com.thinkman.tbsx5test
+12-10 07:45:02.514  1109  1109 I ConfigService: onCreate
+12-10 07:45:02.516  1596  1596 I ConfigFetchService: onStartCommand Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkman.tbsx5test cmp=com.google.android.gms/.config.ConfigFetchService (has extras) }
+12-10 07:45:02.529  1596  1596 D ChimeraCfgMgr: Loading module com.google.android.gms.games from APK com.google.android.play.games
+12-10 07:45:02.529  1596  1596 D ChimeraModuleLdr: Module APK com.google.android.play.games already loaded
+12-10 07:45:02.539  1495  1495 D CarrierServiceBindHelper: Receive action: android.intent.action.PACKAGE_ADDED
+12-10 07:45:02.539  1495  1495 D CarrierServiceBindHelper: mHandler: 3
+12-10 07:45:02.539  1495  1495 D CarrierServiceBindHelper: Receive action: android.intent.action.PACKAGE_REPLACED
+12-10 07:45:02.540  1495  1495 D CarrierServiceBindHelper: mHandler: 3
+12-10 07:45:02.540  1495  1495 D CarrierServiceBindHelper: mHandler: 3
+12-10 07:45:02.540  1495  1495 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+12-10 07:45:02.553 13489 13489 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1221 android.content.ContextWrapper.startService:581 android.content.ContextWrapper.startService:581 com.android.keychain.KeyChainBroadcastReceiver.onReceive:12 android.app.ActivityThread.handleReceiver:2725 
+12-10 07:45:02.605 15473 15473 D Finsky  : [1] ExternalReferrer.access$200: Package state data is missing for com.thinkman.tbsx5test
+12-10 07:45:02.611  1596 16255 D PackageBroadcastService: Received broadcast action=android.intent.action.PACKAGE_ADDED and uri=com.thinkman.tbsx5test
+12-10 07:45:02.621  1596  1596 D ChimeraCfgMgr: Loading module com.google.android.gms.games from APK com.google.android.play.games
+12-10 07:45:02.621  1596  1596 D ChimeraModuleLdr: Module APK com.google.android.play.games already loaded
+12-10 07:45:02.632  1596  1596 I ConfigFetchService: onStartCommand Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkman.tbsx5test cmp=com.google.android.gms/.config.ConfigFetchService (has extras) }
+12-10 07:45:02.638  1596  1596 I ConfigFetchService: launchTask
+12-10 07:45:02.640  1596 16258 W ConfigFetchTask: no android id
+12-10 07:45:02.640  1596 16258 E ConfigFetchTask: failed to build request; aborting config fetch
+12-10 07:45:02.644  1596  1596 D ChimeraCfgMgr: Loading module com.google.android.gms.games from APK com.google.android.play.games
+12-10 07:45:02.644  1596  1596 D ChimeraModuleLdr: Module APK com.google.android.play.games already loaded
+12-10 07:45:02.650  1596  1596 I ConfigFetchService: service connected
+12-10 07:45:02.650  1596  1596 D ChimeraCfgMgr: Loading module com.google.android.gms.vision from APK com.google.android.gms
+12-10 07:45:02.655  1596 16260 I PeopleContactsSync: CP2 sync disabled
+12-10 07:45:02.658  1596  1596 I ConfigFetchService: fetch service done; releasing wakelock
+12-10 07:45:02.659  1596  1596 I ConfigFetchService: stopping self
+12-10 07:45:02.664  1596  1596 D ConfigFetchService: ConfigApi connection successful.
+12-10 07:45:02.671 15129 16261 I UpdateIcingCorporaServi: Updating corpora: APPS=com.thinkman.tbsx5test, CONTACTS=MAYBE
+12-10 07:45:02.689  3039  3039 I WalletInstallRec: Handling App Install.
+12-10 07:45:02.701  1109  1109 E NetworkScheduler.SchedulerReceiver: Invalid parameter app
+12-10 07:45:02.701  1109  1109 E NetworkScheduler.SchedulerReceiver: Invalid package name : Perhaps you didn't include a PendingIntent in the extras?
+12-10 07:45:02.734  1596  1596 D ChimeraCfgMgr: Loading module com.google.android.gms.vision from APK com.google.android.gms
+12-10 07:45:02.737  1596 16263 D PackageBroadcastService: Received broadcast action=android.intent.action.PACKAGE_REPLACED and uri=com.thinkman.tbsx5test
+12-10 07:45:02.751  1596 16264 I PeopleContactsSync: CP2 sync disabled
+12-10 07:45:02.789 15129 16261 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 118 ms] updated apps [took 118 ms] 
+12-10 07:45:03.263 16240 16240 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+12-10 07:45:03.269 16240 16240 D AndroidRuntime: CheckJNI is OFF
+12-10 07:45:03.329 16240 16240 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+12-10 07:45:03.392 16240 16240 I Radio-JNI: register_android_hardware_Radio DONE
+12-10 07:45:03.425 16240 16240 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+12-10 07:45:03.429   784   978 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.thinkman.tbsx5test/.MainActivity} from uid 2000 on display 0
+12-10 07:45:03.454 15129 15141 W SearchService: Abort, client detached.
+12-10 07:45:03.455 16240 16240 D AndroidRuntime: Shutting down VM
+12-10 07:45:03.458 15129 15279 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.speech.audio.x@217b4c4
+12-10 07:45:03.458 15129 16121 E AudioRecord-JNI: Error -4 during AudioRecord native read
+12-10 07:45:03.459 15129 15129 I HotwordDetector: Closing mic
+12-10 07:45:03.486   784  1716 I ActivityManager: Start proc 16280:com.thinkman.tbsx5test/u0a92 for activity com.thinkman.tbsx5test/.MainActivity
+12-10 07:45:03.486 16280 16280 I art     : Late-enabling -Xcheck:jni
+12-10 07:45:03.515   197 16124 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+12-10 07:45:03.516   197 16124 D audio_hw_primary: disable_snd_device: snd_device(61: voice-rec-mic)
+12-10 07:45:03.525 15129 16120 I MicroRecognitionRnrImpl: Detection finished
+12-10 07:45:03.526 15129 15295 I MicroRecognitionRnrImpl: Stopping hotword detection.
+12-10 07:45:03.620  1805  1892 D GCoreFlp: FLP HAL exists but batch size is <= 0.  Disabling FLP HAL.
+12-10 07:45:03.683 16308 16308 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_dependencies_apk.apk@classes.dex: Permission denied
+12-10 07:45:03.683 16308 16308 I dex2oat : dex2oat took 989.167us (threads: 4) 
+12-10 07:45:03.688 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_dependencies_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_dependencies_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:03.830  1596  2189 I Icing   : Indexing D7E0E1447E809C497C8CBE27F24DCA01D594E6AE from com.google.android.googlequicksearchbox
+12-10 07:45:03.881  1596  2189 I Icing   : Indexing done D7E0E1447E809C497C8CBE27F24DCA01D594E6AE
+12-10 07:45:04.053 16315 16315 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_0_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.053 16315 16315 I dex2oat : dex2oat took 818.698us (threads: 4) 
+12-10 07:45:04.057 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_0_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_0_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.136 16317 16317 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_1_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.137 16317 16317 I dex2oat : dex2oat took 935us (threads: 4) 
+12-10 07:45:04.144 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_1_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_1_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.227 16323 16323 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_2_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.227 16323 16323 I dex2oat : dex2oat took 886.666us (threads: 4) 
+12-10 07:45:04.231 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_2_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_2_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.324 16325 16325 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_3_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.324 16325 16325 I dex2oat : dex2oat took 1.101ms (threads: 4) 
+12-10 07:45:04.329 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_3_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_3_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.407 16327 16327 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_4_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.407 16327 16327 I dex2oat : dex2oat took 883.594us (threads: 4) 
+12-10 07:45:04.411 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_4_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_4_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.487 16329 16329 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_5_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.487 16329 16329 I dex2oat : dex2oat took 829.323us (threads: 4) 
+12-10 07:45:04.491 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_5_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_5_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.559 16331 16331 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_6_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.560 16331 16331 I dex2oat : dex2oat took 891.459us (threads: 4) 
+12-10 07:45:04.564 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_6_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_6_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.632 16333 16333 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_7_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.632 16333 16333 I dex2oat : dex2oat took 1.221ms (threads: 4) 
+12-10 07:45:04.636 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_7_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_7_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.703 16335 16335 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_8_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.703 16335 16335 I dex2oat : dex2oat took 1.023ms (threads: 4) 
+12-10 07:45:04.707 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_8_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_8_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.779 16337 16337 E dex2oat : Failed to create oat file: /data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_9_apk.apk@classes.dex: Permission denied
+12-10 07:45:04.779 16337 16337 I dex2oat : dex2oat took 966.043us (threads: 4) 
+12-10 07:45:04.784 16280 16280 W art     : Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg  --debuggable --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/data/app/com.thinkman.tbsx5test-2/split_lib_slice_9_apk.apk --oat-file=/data/dalvik-cache/arm/data@app@com.thinkman.tbsx5test-2@split_lib_slice_9_apk.apk@classes.dex) because non-0 exit status
+12-10 07:45:04.788 16280 16280 W System  : ClassLoader referenced unknown path: /data/app/com.thinkman.tbsx5test-2/lib/arm
+12-10 07:45:04.802 16280 16280 I InstantRun: starting instant run server: is main process
+12-10 07:45:04.997 16280 16342 W System.err: java.lang.SecurityException: getDeviceId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:45:04.997 16280 16342 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:45:04.997 16280 16342 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:45:04.997 16280 16342 W System.err: 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:4207)
+12-10 07:45:04.997 16280 16342 W System.err: 	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:706)
+12-10 07:45:04.997 16280 16342 W System.err: 	at com.tencent.smtt.utils.b.c(Unknown Source)
+12-10 07:45:04.997 16280 16342 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:45:04.997 16280 16342 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:45:04.997 16280 16342 W System.err: 	at com.tencent.smtt.sdk.aw.handleMessage(Unknown Source)
+12-10 07:45:04.997 16280 16342 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:45:04.997 16280 16342 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:45:04.998 16280 16342 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:45:05.177 16280 16280 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+12-10 07:45:05.283 16280 16280 I art     : Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>
+12-10 07:45:05.283 16280 16280 I art     : Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.view.ViewCompat$OnUnhandledKeyEventListenerWrapper>
+12-10 07:45:05.518 16280 16280 I WebViewFactory: Loading com.google.android.webview version 44.0.2403.117 (code 246011700)
+12-10 07:45:05.557 16280 16280 W System  : ClassLoader referenced unknown path: /system/app/WebViewGoogle/lib/arm
+12-10 07:45:05.568 16280 16280 I LibraryLoader: Time to load native libraries: 5 ms (timestamps 3254-3259)
+12-10 07:45:05.568 16280 16280 I LibraryLoader: Expected native library version number "",actual native library version number ""
+12-10 07:45:05.591 16280 16280 V WebViewChromiumFactoryProvider: Binding Chromium to main looper Looper (main, tid 1) {9431658}
+12-10 07:45:05.592 16280 16280 I LibraryLoader: Expected native library version number "",actual native library version number ""
+12-10 07:45:05.592 16280 16280 I chromium: [INFO:library_loader_hooks.cc(120)] Chromium logging enabled: level = 0, default verbosity = 0
+12-10 07:45:05.603 16280 16280 I BrowserStartupController: Initializing chromium process, singleProcess=true
+12-10 07:45:05.604 16280 16280 W art     : Attempt to remove non-JNI local reference, dumping thread
+12-10 07:45:05.605 16280 16280 E SysUtils: ApplicationContext is null in ApplicationStatus
+12-10 07:45:05.626 16280 16280 W chromium: [WARNING:resource_bundle.cc(285)] locale_file_path.empty()
+12-10 07:45:05.635 16280 16280 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+12-10 07:45:05.635 16280 16280 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+12-10 07:45:05.636 16280 16280 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 10/21/15, 369a2ea, I96aee987eb
+12-10 07:45:05.716 16280 16359 W AudioManagerAndroid: Requires BLUETOOTH permission
+12-10 07:45:05.738   531   531 W Binder_4: type=1400 audit(0.0:8152): avc: denied { ioctl } for path="socket:[499279]" dev="sockfs" ino=499279 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.738   531   531 W Binder_4: type=1400 audit(0.0:8153): avc: denied { ioctl } for path="socket:[499279]" dev="sockfs" ino=499279 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.750 16280 16280 W art     : Attempt to remove non-JNI local reference, dumping thread
+12-10 07:45:05.761 16280 16280 W AwContents: onDetachedFromWindow called when already detached. Ignoring
+12-10 07:45:05.797 16280 16280 D THINKMAN: [2018-12-10 07:45:05] MainActivity.onCreate():32    Hello World
+12-10 07:45:05.878   531   531 W Binder_4: type=1400 audit(0.0:8154): avc: denied { ioctl } for path="socket:[499296]" dev="sockfs" ino=499296 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.878   531   531 W Binder_4: type=1400 audit(0.0:8155): avc: denied { ioctl } for path="socket:[499296]" dev="sockfs" ino=499296 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.882 16280 16370 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+12-10 07:45:05.923 16280 16357 W chromium: [WARNING:data_reduction_proxy_config.cc(423)] SPDY proxy OFF at startup
+12-10 07:45:05.918  2875  2875 W Binder_B: type=1400 audit(0.0:8156): avc: denied { ioctl } for path="socket:[500589]" dev="sockfs" ino=500589 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.918  2875  2875 W Binder_B: type=1400 audit(0.0:8157): avc: denied { ioctl } for path="socket:[500589]" dev="sockfs" ino=500589 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:05.989 16280 16370 I OpenGLRenderer: Initialized EGL, version 1.4
+12-10 07:45:06.096 16280 16280 W art     : Before Android 4.1, method int android.support.v7.widget.DropDownListView.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+12-10 07:45:06.140   784   803 I ActivityManager: Displayed com.thinkman.tbsx5test/.MainActivity: +2s682ms
+12-10 07:45:06.152  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:45:06.138  1663  1663 W Binder_8: type=1400 audit(0.0:8158): avc: denied { ioctl } for path="socket:[500596]" dev="sockfs" ino=500596 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:06.138  1663  1663 W Binder_8: type=1400 audit(0.0:8159): avc: denied { ioctl } for path="socket:[500596]" dev="sockfs" ino=500596 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:06.148  1667  1667 W Binder_9: type=1400 audit(0.0:8160): avc: denied { ioctl } for path="socket:[500595]" dev="sockfs" ino=500595 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:06.148  1667  1667 W Binder_9: type=1400 audit(0.0:8161): avc: denied { ioctl } for path="socket:[500595]" dev="sockfs" ino=500595 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:45:06.289 16280 16280 W BindingManager: Cannot call determinedVisibility() - never saw a connection for the pid: 16280
+12-10 07:45:06.548 16280 16342 W System.err: java.lang.SecurityException: getDeviceId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:45:06.548 16280 16342 W System.err: 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:4207)
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:706)
+12-10 07:45:06.548 16280 16342 W System.err: 	at com.tencent.smtt.utils.b.c(Unknown Source)
+12-10 07:45:06.548 16280 16342 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:45:06.548 16280 16342 W System.err: 	at com.tencent.smtt.sdk.TbsLogReport.a(Unknown Source)
+12-10 07:45:06.548 16280 16342 W System.err: 	at com.tencent.smtt.sdk.aw.handleMessage(Unknown Source)
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:45:06.548 16280 16342 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:45:07.678  1109  1109 I ConfigService: onDestroy
+12-10 07:45:12.861   784   880 I InputReader: Reconfiguring input devices.  changes=0x00000010
+12-10 07:45:13.025 15129 16425 I UpdateIcingCorporaServi: Updating corpora: APPS=com.google.android.gms, CONTACTS=MAYBE
+12-10 07:45:13.042  1596 16427 D PackageBroadcastService: Received broadcast action=android.intent.action.PACKAGE_CHANGED and uri=com.google.android.gms
+12-10 07:45:13.056  1805  1805 V GmsNetworkLocationProvi: DISABLE
+12-10 07:45:13.062  1596 16427 I PackageBroadcastService: Null package name or gms related package.  Ignoreing.
+12-10 07:45:13.088  1596  2189 I Icing   : updateResources: need to parse f{com.google.android.gms}
+12-10 07:45:13.096 15129 16425 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 70 ms] updated apps [took 70 ms] 
+12-10 07:45:13.135  1805  1986 V GmsNetworkLocationProvi: onSetRequest: ProviderRequestUnbundled, reportLocation is true and interval is 86400000
+12-10 07:45:13.137  1805  1805 V GmsNetworkLocationProvi: ENABLE
+12-10 07:45:13.141  1805  1805 V GmsNetworkLocationProvi: SET-REQUEST
+12-10 07:45:13.141  1805  1805 V GmsNetworkLocationProvi: in Handler: ProviderRequestUnbundled, reportLocation is true and interval is 86400000
+12-10 07:45:13.154   784   796 D ActivityRecognitionProxy: AR HW instance not available, binding will be a no-op.
+12-10 07:45:13.158   784  2875 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@7ef5398}
+12-10 07:45:13.160   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:45:13.160   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:45:13.180   784  1663 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@7ef5398}
+12-10 07:45:14.077  1805  1954 W System.err: java.net.ConnectException: failed to connect to www.google.com/31.13.73.23 (port 443) after 60000ms: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:45:14.077  1805  1954 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:234)
+12-10 07:45:14.077  1805  1954 W System.err: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:171)
+12-10 07:45:14.077  1805  1954 W System.err: 	at libcore.io.IoBridge.connect(IoBridge.java:122)
+12-10 07:45:14.077  1805  1954 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+12-10 07:45:14.077  1805  1954 W System.err: 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:452)
+12-10 07:45:14.077  1805  1954 W System.err: 	at java.net.Socket.connect(Socket.java:884)
+12-10 07:45:14.077  1805  1954 W System.err: 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:117)
+12-10 07:45:14.077  1805  1954 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectRawSocket(SocketConnector.java:160)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:79)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.Connection.connect(Connection.java:143)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:245)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:933)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.a(SourceFile:775)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:676)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.android.gms.http.GoogleHttpClient.execute(SourceFile:660)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.r.a.b.a.b.g(SourceFile:126)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.r.a.b.a.b.c(SourceFile:172)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.y.a.d.run(SourceFile:434)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.y.a.c.c(SourceFile:230)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.y.a.c.run(SourceFile:204)
+12-10 07:45:14.078  1805  1954 W System.err: 	at com.google.r.a.c.b.run(SourceFile:96)
+12-10 07:45:14.078  1805  1954 W System.err: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+12-10 07:45:14.079  1805  1954 W System.err: 	at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+12-10 07:45:14.079  1805  1954 W System.err: 	... 29 more
+12-10 07:45:17.284   207   317 I ThermalEngine: TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm cleared 3 at 42.0 degC
+12-10 07:45:17.284   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[0] to 1574400
+12-10 07:45:17.285   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[1] to 1574400
+12-10 07:45:17.285   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[2] to 1574400
+12-10 07:45:17.285   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[3] to 1574400
+12-10 07:45:17.286   207   317 I ThermalEngine: ACTION: LCD - Setting max LCD brightness to 204
+12-10 07:45:17.664   784   797 I ActivityManager: Start proc 16448:com.google.android.apps.photos/u0a64 for broadcast com.google.android.apps.photos/.scheduler.AlarmReceiver
+12-10 07:45:17.754 16448 16448 W System  : ClassLoader referenced unknown path: /system/app/Photos/lib/arm
+12-10 07:45:17.771 15129 16453 W CronetSyncConnectionRcs: Upload content type not set.
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: Unknown exception from Cronet.
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: java.io.IOException: System error: net::ERR_CONNECTION_REFUSED(-102)
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.getException(ChromiumUrlRequest.java:185)
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.d(CronetSyncWaitableListener.java:126)
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.c(CronetSyncWaitableListener.java:101)
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.b(CronetSyncWaitableListener.java:84)
+12-10 07:45:17.840 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.finish(ChromiumUrlRequest.java:4501)
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: Unknown exception from Cronet.
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: java.io.IOException: System error: net::ERR_CONNECTION_REFUSED(-102)
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.getException(ChromiumUrlRequest.java:185)
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.d(CronetSyncWaitableListener.java:126)
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: 	at com.google.android.apps.gsa.search.core.j.a.c.f.b(CronetSyncWaitableListener.java:91)
+12-10 07:45:17.880 15129 16004 W CronetSyncWaitableLstnr: 	at org.chromium.net.ChromiumUrlRequest.finish(ChromiumUrlRequest.java:4501)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: Unable to send logs
+12-10 07:45:17.881 15129 16453 W EventLoggerService: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 65580 | Error code: 655369
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:146)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.br(S3LogSender.java:79)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.a(EventLoggerService.java:575)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.i(EventLoggerService.java:320)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.gB(EventLoggerService.java:245)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.onHandleIntent(EventLoggerService.java:236)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:66)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 655369
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.n.a(HttpLogEntry.java:84)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.e.a(CronetSyncResponseInfo.java:51)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:178)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:39)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.aac(HttpConnectionImpl.java:165)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.a(HttpConnectionImpl.java:158)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.b(S3RequestStream.java:66)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.a(S3RequestStream.java:52)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:144)
+12-10 07:45:17.881 15129 16453 W EventLoggerService: 	... 9 more
+12-10 07:45:17.881 15129 16453 W ErrorReporter: reportError [type: 211, code: 65580]: Error code: 65580 | Error code: 655369
+12-10 07:45:17.899 15473 15509 D Finsky  : [1400] AppStatesReplicator.handleContentSyncResponse: Completed 0 account content syncs with 0 successful.
+12-10 07:45:17.900 15473 15473 D Finsky  : [1] ContentSyncService$5.onFinished: Installation state replication succeeded.
+12-10 07:45:17.962  1596 16482 I EventLogService: Opted in for usage reporting
+12-10 07:45:17.962  1596 16482 I EventLogService: Aggregate from 1544444117421 (log), 1544444117421 (data)
+12-10 07:45:18.158   784  1663 I ActivityManager: Killing 9156:com.google.android.youtube/u0a80 (adj 15): empty #17
+12-10 07:45:18.324   784   978 D ActivityManager: cleanUpApplicationRecord -- 9156
+12-10 07:45:25.910   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358118622, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:45:31.532   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358124243, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:45:47.312   207   317 I ThermalEngine: TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm cleared 2 at 40.0 degC
+12-10 07:45:47.312   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[0] to 1958400
+12-10 07:45:47.313   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[1] to 1958400
+12-10 07:45:47.313   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[2] to 1958400
+12-10 07:45:47.313   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[3] to 1958400
+12-10 07:45:47.314   207   317 I ThermalEngine: ACTION: LCD - Setting max LCD brightness to 229
+12-10 07:45:50.350   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358143062, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:45:56.611   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358149323, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:46:06.193  1439  4271 I Keyboard.Facilitator.LanguageModelFlusher: run()
+12-10 07:46:06.193  1439  4271 I Keyboard.Facilitator: flushDynamicLanguageModels()
+12-10 07:46:06.210  1109  1109 I ConfigService: onCreate
+12-10 07:46:07.323   207   317 I ThermalEngine: TM Id 'battery_LCD_monitor' Sensor 'batt_therm' - alarm cleared 5 at 350.0 degC
+12-10 07:46:07.323   207   317 I ThermalEngine: TM Id 'battery_LCD_monitor' Sensor 'batt_therm' - alarm cleared 4 at 350.0 degC
+12-10 07:46:07.323   207   317 E ThermalEngine: override action 5000
+12-10 07:46:07.323   207   317 E ThermalEngine: Thermal-Server: Thermal received msg override 5000
+12-10 07:46:07.323   207   317 E ThermalEngine: override_notify : SS mode 1 override 5000
+12-10 07:46:11.245  1109  1109 I ConfigService: onDestroy
+12-10 07:46:15.430   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358168142, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:46:21.330   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358174043, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:46:37.360   207   317 I ThermalEngine: TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm cleared 1 at 38.0 degC
+12-10 07:46:37.361   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[0] to 2265600
+12-10 07:46:37.361   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[1] to 2265600
+12-10 07:46:37.361   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[2] to 2265600
+12-10 07:46:37.361   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[3] to 2265600
+12-10 07:46:37.362   207   317 I ThermalEngine: ACTION: LCD - Setting max LCD brightness to 255
+12-10 07:46:38.836   784   879 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.google.android.googlequicksearchbox/com.google.android.launcher.GEL (has extras)} from uid 1000 on display 0
+12-10 07:46:38.864   197   821 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+12-10 07:46:38.874   197   821 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+12-10 07:46:38.874   197   821 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+12-10 07:46:38.874   197   821 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+12-10 07:46:38.886   197   821 D audio_hw_primary: enable_audio_route: apply and update mixer path: low-latency-playback
+12-10 07:46:38.905  1508  1508 I GEL     : handleIntent(Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10600000 cmp=com.google.android.googlequicksearchbox/com.google.android.launcher.GEL (has extras) })
+12-10 07:46:38.938  1716  1716 W Binder_A: type=1400 audit(0.0:8162): avc: denied { ioctl } for path="socket:[17428]" dev="sockfs" ino=17428 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:38.948  1716  1716 W Binder_A: type=1400 audit(0.0:8163): avc: denied { ioctl } for path="socket:[17428]" dev="sockfs" ino=17428 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:38.959  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:46:38.985 15129 15129 W ThreadPoolDumper: Queue length for executor AudioRouter with 1 threads is now 8. Perhaps some tasks are too long, or the pool is too small.
+12-10 07:46:39.009 15129 15129 W LocationOracleImpl: Best location was null
+12-10 07:46:39.013   784   793 I art     : Background partial concurrent mark sweep GC freed 21121(1205KB) AllocSpace objects, 5(116KB) LOS objects, 33% free, 30MB/46MB, paused 3.061ms total 154.192ms
+12-10 07:46:39.033 15129 16544 I MicroRecognitionRnrImpl: Starting detection.
+12-10 07:46:39.035 15129 16545 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.speech.audio.x@d0c47c8
+12-10 07:46:39.040   197 16547 I AudioFlinger: AudioFlinger's thread 0xb28c0000 ready to run
+12-10 07:46:39.047 15129 16545 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.speech.audio.x@d0c47c8
+12-10 07:46:39.056   197 16547 D audio_hw_primary: select_devices: out_snd_device(0: none) in_snd_device(61: voice-rec-mic)
+12-10 07:46:39.056   197 16547 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(61) acdb_id(62)
+12-10 07:46:39.056   197 16547 D         : Failed to fetch the lookup information of the device 0000003E 
+12-10 07:46:39.056   197 16547 E ACDB-LOADER: Error: ACDB AudProc vol returned = -19
+12-10 07:46:39.056   197 16547 D audio_hw_primary: enable_snd_device: snd_device(61: voice-rec-mic)
+12-10 07:46:39.060   197 16547 D audio_hw_primary: enable_audio_route: apply and update mixer path: audio-record
+12-10 07:46:39.070  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:46:39.084  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:46:39.088  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:46:39.114  1805  1892 D GCoreFlp: FLP HAL exists but batch size is <= 0.  Disabling FLP HAL.
+12-10 07:46:39.120   784  1541 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@a2663ed}
+12-10 07:46:39.121   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:46:39.121   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:46:39.123  1805  1892 W GCoreFlp: No location to return for getLastLocation()
+12-10 07:46:39.135 15129 15129 I HotwordWorkerImpl: onReady
+12-10 07:46:39.150   784  1716 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@a2663ed}
+12-10 07:46:39.152   784   980 D WifiService: acquireWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@a2663ed}
+12-10 07:46:39.154   784   906 D WifiScanningService: Pending scan removed, handler=337, period=0
+12-10 07:46:39.159   784   906 D wifi    : Initialized common fields 10000, 16, 100, 10
+12-10 07:46:39.160   784   906 D wifi    : bucket[0] = 2:3:10000:2
+12-10 07:46:39.163   784  1663 D WifiService: releaseWifiLockLocked: WifiLock{NlpWifiLock type=2 binder=android.os.BinderProxy@a2663ed}
+12-10 07:46:39.242   784   895 D WifiService: New client listening to asynchronous messages
+12-10 07:46:39.245 16280 16280 W System.err: java.lang.SecurityException: getDeviceId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:46:39.245 16280 16280 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:46:39.245 16280 16280 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:46:39.245 16280 16280 W System.err: 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getDeviceId(ITelephony.java:4207)
+12-10 07:46:39.245 16280 16280 W System.err: 	at android.telephony.TelephonyManager.getDeviceId(TelephonyManager.java:706)
+12-10 07:46:39.245 16280 16280 W System.err: 	at com.tencent.smtt.utils.b.c(Unknown Source)
+12-10 07:46:39.245 16280 16280 W System.err: 	at com.tencent.smtt.sdk.a.b.a(Unknown Source)
+12-10 07:46:39.245 16280 16280 W System.err: 	at com.tencent.smtt.sdk.WebView.onVisibilityChanged(Unknown Source)
+12-10 07:46:39.245 16280 16280 W System.err: 	at android.view.View.dispatchVisibilityChanged(View.java:9585)
+12-10 07:46:39.245 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1292)
+12-10 07:46:39.246 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.246 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.246 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.246 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.246 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.view.View.setFlags(View.java:10646)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.view.View.setVisibility(View.java:7431)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.app.ActivityThread.updateVisibility(ActivityThread.java:3539)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3556)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.app.ActivityThread.-wrap20(ActivityThread.java)
+12-10 07:46:39.247 16280 16280 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1373)
+12-10 07:46:39.248 16280 16280 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:46:39.248 16280 16280 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:46:39.249 16280 16280 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-10 07:46:39.249 16280 16280 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+12-10 07:46:39.249 16280 16280 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-10 07:46:39.249 16280 16280 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-10 07:46:39.253 16280 16280 W System.err: java.lang.SecurityException: getSubscriberId: Neither user 10092 nor current process has android.permission.READ_PHONE_STATE.
+12-10 07:46:39.253 16280 16280 W System.err: 	at android.os.Parcel.readException(Parcel.java:1620)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.os.Parcel.readException(Parcel.java:1573)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy.getSubscriberIdForSubscriber(IPhoneSubInfo.java:560)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:2013)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.telephony.TelephonyManager.getSubscriberId(TelephonyManager.java:1994)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.tencent.smtt.utils.b.d(Unknown Source)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.tencent.smtt.sdk.a.b.a(Unknown Source)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.tencent.smtt.sdk.WebView.onVisibilityChanged(Unknown Source)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.View.dispatchVisibilityChanged(View.java:9585)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1292)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.ViewGroup.dispatchVisibilityChanged(ViewGroup.java:1296)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.View.setFlags(View.java:10646)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.view.View.setVisibility(View.java:7431)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.app.ActivityThread.updateVisibility(ActivityThread.java:3539)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3556)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.app.ActivityThread.-wrap20(ActivityThread.java)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1373)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:46:39.254 16280 16280 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+12-10 07:46:39.254 16280 16280 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+12-10 07:46:39.254 16280 16280 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-10 07:46:39.474  1508  1775 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+12-10 07:46:42.096   197   821 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+12-10 07:46:42.096   197   821 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+12-10 07:46:42.975   784  1541 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.Main bnds=[648,1532][849,1784] (has extras)} from uid 10026 on display 0
+12-10 07:46:42.988 15129 15151 W SearchService: Abort, client detached.
+12-10 07:46:42.993   197   821 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+12-10 07:46:42.996 15129 15129 I HotwordDetector: Closing mic
+12-10 07:46:42.996 15129 15279 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.speech.audio.x@d0c47c8
+12-10 07:46:42.997 15129 16545 E AudioRecord-JNI: Error -4 during AudioRecord native read
+12-10 07:46:43.014   197   821 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+12-10 07:46:43.014   197   821 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+12-10 07:46:43.014   197   821 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+12-10 07:46:43.016   197   821 D audio_hw_primary: enable_audio_route: apply and update mixer path: low-latency-playback
+12-10 07:46:43.064   197 16547 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+12-10 07:46:43.064   197 16547 D audio_hw_primary: disable_snd_device: snd_device(61: voice-rec-mic)
+12-10 07:46:43.066   197   821 D AudioFlinger: mixer(0xb4140000) throttle end: throttle time(10)
+12-10 07:46:43.067  1805  1892 D GCoreFlp: FLP HAL exists but batch size is <= 0.  Disabling FLP HAL.
+12-10 07:46:43.072 15129 16544 I MicroRecognitionRnrImpl: Detection finished
+12-10 07:46:43.072 15129 15295 I MicroRecognitionRnrImpl: Stopping hotword detection.
+12-10 07:46:43.128  1127  1127 W Binder_6: type=1400 audit(0.0:8164): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:43.138  1127  1127 W Binder_6: type=1400 audit(0.0:8165): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:43.142  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:46:43.147  1439  1439 I Keyboard.Facilitator: onStartInput()
+12-10 07:46:43.166  1439  1439 I LatinIME: Starting input. Cursor position = 0,0
+12-10 07:46:43.219  1439  1439 I Keyboard.Facilitator: resetDictionaries() : no-op
+12-10 07:46:43.219  1439  1439 I StatsUtilsManager: onLoadSettings()
+12-10 07:46:45.540   784   896 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 105]
+12-10 07:46:46.206   197   821 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+12-10 07:46:46.206   197   821 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+12-10 07:46:48.042  4334  4334 D DelayedSyncController: No delayed sync.
+12-10 07:46:48.358  1541  1541 W Binder_7: type=1400 audit(0.0:8166): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.371   784  1667 I ActivityManager: Start proc 16617:com.android.chrome:sandboxed_process2/u0i4 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService2
+12-10 07:46:48.358  1541  1541 W Binder_7: type=1400 audit(0.0:8167): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.448 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8168): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.448 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8169): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.448 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8170): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.459 16617 16638 W FileUtils: Failed to chmod(/data/user/0/com.android.chrome/app_chrome): android.system.ErrnoException: chmod failed: EACCES (Permission denied)
+12-10 07:46:48.458 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8171): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.458 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8172): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.458 16638 16638 W com.android.chrome:sandboxed_process2: type=1400 audit(0.0:8173): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:48.461 16617 16638 W ContextImpl: Unable to create files subdir /data/user/0/com.android.chrome/cache
+12-10 07:46:48.462  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:46:48.465 16617 16617 I ChildProcessService: Creating new ChildProcessService pid=16617
+12-10 07:46:48.488  4334  4334 W .android.chrome: type=1400 audit(0.0:8174): avc: denied { ioctl } for path="socket:[499500]" dev="sockfs" ino=499500 ioctlcmd=7704 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8175): avc: denied { ioctl } for path="socket:[499500]" dev="sockfs" ino=499500 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8176): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/natives_blob.bin" dev="mmcblk0p28" ino=1475370 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8177): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/snapshot_blob.bin" dev="mmcblk0p28" ino=1475422 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8178): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/chrome_100_percent.pak" dev="mmcblk0p28" ino=1474958 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8179): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/en-US.pak" dev="mmcblk0p28" ino=1475254 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8180): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/resources.pak" dev="mmcblk0p28" ino=1475411 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8181): avc: denied { ioctl } for path="/data/data/com.android.chrome/cache/.com.google.Chrome.nAwgEP" dev="mmcblk0p28" ino=1476283 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8182): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/icudtl.dat" dev="mmcblk0p28" ino=1475321 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8183): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/icudtl.dat" dev="mmcblk0p28" ino=1475321 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8184): avc: denied { ioctl } for path="/data/data/com.android.chrome/cache/.com.google.Chrome.nAwgEP" dev="mmcblk0p28" ino=1476283 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8185): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/resources.pak" dev="mmcblk0p28" ino=1475411 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8186): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/en-US.pak" dev="mmcblk0p28" ino=1475254 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8187): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/chrome_100_percent.pak" dev="mmcblk0p28" ino=1474958 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8188): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/snapshot_blob.bin" dev="mmcblk0p28" ino=1475422 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8189): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/natives_blob.bin" dev="mmcblk0p28" ino=1475370 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:48.488 16629 16629 W Binder_2: type=1400 audit(0.0:8190): avc: denied { ioctl } for path="socket:[499500]" dev="sockfs" ino=499500 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.508  4334  4334 W .android.chrome: type=1400 audit(0.0:8191): avc: denied { ioctl } for path="socket:[499500]" dev="sockfs" ino=499500 ioctlcmd=7704 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:48.518 16617 16644 I LibraryLoader: Loading chrome directly from within /system/app/Chrome/Chrome.apk
+12-10 07:46:48.558   784   896 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 105]
+12-10 07:46:48.620 16617 16644 I LibraryLoader: Time to load native libraries: 108 ms (timestamps 6202-6310)
+12-10 07:46:48.621 16617 16644 I LibraryLoader: Expected native library version number "44.0.2403.133",actual native library version number "44.0.2403.133"
+12-10 07:46:48.623 16617 16644 I chromium: [INFO:library_loader_hooks.cc(120)] Chromium logging enabled: level = 0, default verbosity = 0
+12-10 07:46:49.149  4381  4453 W chromium: [WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+12-10 07:46:49.149  4381  4453 W chromium: [WARNING:channel.cc(315)] RawChannel write error
+12-10 07:46:49.156   188   188 E lowmemorykiller: Error writing /proc/4381/oom_score_adj; errno=22
+12-10 07:46:49.160   188   188 E lowmemorykiller: Error writing /proc/4381/oom_score_adj; errno=22
+12-10 07:46:49.161   784  1667 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 744)
+12-10 07:46:49.162   784  1667 W ActivityManager: Exception when unbinding service com.android.chrome/org.chromium.content.app.SandboxedProcessService0
+12-10 07:46:49.162   784  1667 W ActivityManager: android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at android.app.ApplicationThreadProxy.scheduleUnbindService(ApplicationThreadNative.java:956)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at com.android.server.am.ActiveServices.removeConnectionLocked(ActiveServices.java:1874)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at com.android.server.am.ActiveServices.unbindServiceLocked(ActiveServices.java:926)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at com.android.server.am.ActivityManagerService.unbindService(ActivityManagerService.java:16013)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:996)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2484)
+12-10 07:46:49.162   784  1667 W ActivityManager: 	at android.os.Binder.execTransact(Binder.java:453)
+12-10 07:46:49.162   188   188 E lowmemorykiller: Error writing /proc/4381/oom_score_adj; errno=22
+12-10 07:46:49.239   784  1663 I ActivityManager: Process com.android.chrome:sandboxed_process0 (pid 4381) has died
+12-10 07:46:49.239   784  1663 D ActivityManager: cleanUpApplicationRecord -- 4381
+12-10 07:46:50.648   981   981 W Binder_5: type=1400 audit(0.0:8192): avc: denied { ioctl } for path="socket:[499595]" dev="sockfs" ino=499595 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:50.648   981   981 W Binder_5: type=1400 audit(0.0:8193): avc: denied { ioctl } for path="socket:[499595]" dev="sockfs" ino=499595 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:50.652  4334  4334 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://www.baidu.com/' was loaded over HTTPS, but requested an insecure image 'http://127.0.0.1:59468/?data=fCMxIzsjMi8xLzUjLSMyIzsjbVRmW1ZlT3daWElUN1cyZFQzNm15W3t2MG41cFgwVXY4VUdqSjRuTHJ6UWxIZjpoSkZJM086MjksTXBsW2tMekUyQkhnSnRNVU1vdE4sQixPRTBmREI%2BPiMtIzMjOyM5NTVjfSMtIzQjOzI2NTU1NTcxMjE2ODh%2B'. This content should also be served over HTTPS.", source: https://www.baidu.com/ (0)
+12-10 07:46:51.320  4334  4334 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://www.baidu.com/' was loaded over HTTPS, but requested an insecure resource 'baiduboxlite://utils?action=sendIntent&minver=3.3&params=%7B%22intent%22%3A%22intent%3A%23Intent%3Baction%3Dcom.baidu.searchbox.action.HOME%3Bpackage%3Dcom.baidu.searchbox.lite%3BS.targetCommand%3D%257B%2522mode%2522%253A%25220%2522%252C%2522intent%2522%253A%2522intent%253A%2523Intent%253Baction%253Dcom.baidu.searchbox.action.HOME%253Bcategory%253Dandroid.intent.category.DEFAULT%253BS.extra_target_tab%253DFeed%253Bend%2522%252C%2522min_v%2522%253A%252220120832%2522%257D%3Bend%22%7D&needlog=1&logargs=%7B%22...21021206d%22%2C%22from%22%3A%22openbox%22%2C%22page%22%3A%22chrome%22%2C%22type%22%3A%22%22%2C%22value%22%3A%22%22%2C%22channel%22%3A%221021206r%22%2C%22extlog%22%3A%22%22%2C%22baiduId%22%3A%2272F07D274EA056C5AF48A2E3F035B651%3AFG%3D1%22%2C%22app_now%22%3A%22chrome_1544446011216_8866546154%22%2C%22yyb_pkg%22%3A%22com.baidu.searchbox%22%2C%22idmData%22%3A%7B%22firstOpen%22%3A%22lite%22%2C%22secondOpen%22%3A%22main%22%2C%22status%22%3A%220%22%2C%22timeout%22%3A1544532410946%7D%2C%22matrix%22%3A%22lite%22%7D'. This content should also be served over HTTPS.", source: https://www.baidu.com/ (0)
+12-10 07:46:51.352  4334  4334 I chromium: [INFO:CONSOLE(0)] "Navigation is unreachable: baiduboxlite://utils?action=sendIntent&minver=3.3&params=%7B%22intent%22%3A%22intent%3A%23Intent%3Baction%3Dcom.baidu.searchbox.action.HOME%3Bpackage%3Dcom.baidu.searchbox.lite%3BS.targetCommand%3D%257B%2522mode%2522%253A%25220%2522%252C%2522intent%2522%253A%2522intent%253A%2523Intent%253Baction%253Dcom.baidu.searchbox.action.HOME%253Bcategory%253Dandroid.intent.category.DEFAULT%253BS.extra_target_tab%253DFeed%253Bend%2522%252C%2522min_v%2522%253A%252220120832%2522%257D%3Bend%22%7D&needlog=1&logargs=%7B%22source%22%3A%221021206d%22%2C%22from%22%3A%22openbox%22%2C%22page%22%3A%22chrome%22%2C%22type%22%3A%22%22%2C%22value%22%3A%22%22%2C%22channel%22%3A%221021206r%22%2C%22extlog%22%3A%22%22%2C%22baiduId%22%3A%2272F07D274EA056C5AF48A2E3F035B651%3AFG%3D1%22%2C%22app_now%22%3A%22chrome_1544446011216_8866546154%22%2C%22yyb_pkg%22%3A%22com.baidu.searchbox%22%2C%22idmData%22%3A%7B%22firstOpen%22%3A%22lite%22%2C%22secondOpen%22%3A%22main%22%2C%22status%22%3A%220%22%2C%22timeout%22%3A1544532410946%7D%2C%22matrix%22%3A%22lite%22%7D", source: https://www.baidu.com/ (0)
+12-10 07:46:51.439  4334  4334 I chromium: [INFO:CONSOLE(0)] "Mixed Content: The page at 'https://www.baidu.com/' was loaded over HTTPS, but requested an insecure resource 'baiduboxapp://utils?action=sendIntent&minver=7.4&params=%7B%22intent%22%3A%22intent%3A%23Intent%3Baction%3Dcom.baidu.searchbox.action.HOME%3Bpackage%3Dcom.baidu.searchbox%3BS.targetCommand%3D%257B%2522mode%2522%253A%25220%2522%252C%2522intent%2522%253A%2522intent%253A%2523Intent%253Baction%253Dcom.baidu.searchbox.action.HOME%253Bcategory%253Dandroid.intent.category.DEFAULT%253BS.extra_target_tab%253DFeed%253Bend%2522%252C%2522min_v%2522%253A%252216787968%2522%257D%3Bend%22%7D&needlog=1&logargs=%7B%22source...21021206d%22%2C%22from%22%3A%22openbox%22%2C%22page%22%3A%22chrome%22%2C%22type%22%3A%22%22%2C%22value%22%3A%22%22%2C%22channel%22%3A%221021206r%22%2C%22extlog%22%3A%22%22%2C%22baiduId%22%3A%2272F07D274EA056C5AF48A2E3F035B651%3AFG%3D1%22%2C%22app_now%22%3A%22chrome_1544446011418_4831978977%22%2C%22yyb_pkg%22%3A%22com.baidu.searchbox%22%2C%22idmData%22%3A%7B%22firstOpen%22%3A%22lite%22%2C%22secondOpen%22%3A%22main%22%2C%22status%22%3A%220%22%2C%22timeout%22%3A1544532410946%7D%2C%22matrix%22%3A%22main%22%7D'. This content should also be served over HTTPS.", source: https://www.baidu.com/ (0)
+12-10 07:46:51.574   784   896 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 105]
+12-10 07:46:53.009  1109  1109 E GCM     : Missing checkin config file
+12-10 07:46:53.018  1109  1109 W GCM     : GCM FAILED TO INITIALIZE - missing checkin
+12-10 07:46:53.078 15129 16725 W CronetSyncConnectionRcs: Upload content type not set.
+12-10 07:46:53.100   784  2875 I ActivityManager: Start proc 16743:com.google.android.youtube/u0a80 for service com.google.android.youtube/com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator
+12-10 07:46:53.154 16743 16743 W System  : ClassLoader referenced unknown path: /system/app/YouTube/lib/arm
+12-10 07:46:53.216 16743 16756 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/arm
+12-10 07:46:53.293 16743 16756 V JNIHelp : Registering com/google/android/gms/org/conscrypt/NativeCrypto's 241 native methods...
+12-10 07:46:53.342 16743 16756 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+12-10 07:46:53.403 16743 16743 W System.err: YouTube MDX: Bogus value in shared preferences for key MdxServerSelection value , returning default value.
+12-10 07:46:53.423 16769 16769 I dex2oat : /system/bin/dex2oat --dex-file=/data/user/0/com.google.android.youtube/cache/ads1670234974.jar --oat-file=/data/user/0/com.google.android.youtube/cache/ads1670234974.dex
+12-10 07:46:53.480 16769 16769 I dex2oat : dex2oat took 59.134ms (threads: 4) arena alloc=397KB java alloc=41KB native alloc=1515KB free=1556KB
+12-10 07:46:53.631 16743 16743 W InstanceID/Rpc: Found 10010
+12-10 07:46:53.679  1596  3484 E JavaBinder: *** Uncaught remote exception!  (Exceptions are not yet supported across processes.)
+12-10 07:46:53.679  1596  3484 E JavaBinder: java.lang.RuntimeException: android.os.RemoteException
+12-10 07:46:53.679  1596  3484 E JavaBinder: 	at android.os.Parcel.writeException(Parcel.java:1520)
+12-10 07:46:53.679  1596  3484 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:459)
+12-10 07:46:53.679  1596  3484 E JavaBinder: Caused by: android.os.RemoteException
+12-10 07:46:53.679  1596  3484 E JavaBinder: 	at com.google.android.gms.ads.identifier.service.b.a(SourceFile:77)
+12-10 07:46:53.679  1596  3484 E JavaBinder: 	at com.google.android.gms.ads.identifier.a.e.onTransact(SourceFile:63)
+12-10 07:46:53.679  1596  3484 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:453)
+12-10 07:46:53.681  1596  1606 E JavaBinder: *** Uncaught remote exception!  (Exceptions are not yet supported across processes.)
+12-10 07:46:53.681  1596  1606 E JavaBinder: java.lang.RuntimeException: android.os.RemoteException
+12-10 07:46:53.681  1596  1606 E JavaBinder: 	at android.os.Parcel.writeException(Parcel.java:1520)
+12-10 07:46:53.681  1596  1606 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:459)
+12-10 07:46:53.681  1596  1606 E JavaBinder: Caused by: android.os.RemoteException
+12-10 07:46:53.681  1596  1606 E JavaBinder: 	at com.google.android.gms.ads.identifier.service.b.a(SourceFile:77)
+12-10 07:46:53.681  1596  1606 E JavaBinder: 	at com.google.android.gms.ads.identifier.a.e.onTransact(SourceFile:63)
+12-10 07:46:53.681  1596  1606 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:453)
+12-10 07:46:53.682  1596  2014 E JavaBinder: *** Uncaught remote exception!  (Exceptions are not yet supported across processes.)
+12-10 07:46:53.682  1596  2014 E JavaBinder: java.lang.RuntimeException: android.os.RemoteException
+12-10 07:46:53.682  1596  2014 E JavaBinder: 	at android.os.Parcel.writeException(Parcel.java:1520)
+12-10 07:46:53.682  1596  2014 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:459)
+12-10 07:46:53.682  1596  2014 E JavaBinder: Caused by: android.os.RemoteException
+12-10 07:46:53.682  1596  2014 E JavaBinder: 	at com.google.android.gms.ads.identifier.service.b.a(SourceFile:77)
+12-10 07:46:53.682  1596  2014 E JavaBinder: 	at com.google.android.gms.ads.identifier.a.e.onTransact(SourceFile:63)
+12-10 07:46:53.682  1596  2014 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:453)
+12-10 07:46:53.945   197   821 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+12-10 07:46:53.948   795   795 W Binder_2: type=1400 audit(0.0:8194): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:53.948   795   795 W Binder_2: type=1400 audit(0.0:8195): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:53.955   197   821 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+12-10 07:46:53.955   197   821 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+12-10 07:46:53.955   197   821 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+12-10 07:46:53.959  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:46:53.963   197   821 D audio_hw_primary: enable_audio_route: apply and update mixer path: low-latency-playback
+12-10 07:46:53.972  1439  1439 I Keyboard.Facilitator: onFinishInput()
+12-10 07:46:53.968   978   978 W Binder_3: type=1400 audit(0.0:8196): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:53.968   978   978 W Binder_3: type=1400 audit(0.0:8197): avc: denied { ioctl } for path="socket:[391748]" dev="sockfs" ino=391748 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+12-10 07:46:54.189  1596  2189 I Icing   : Usage reports 1 indexed 0 rejected 0 imm upload false
+12-10 07:46:54.536  1439  1439 D EmojiAltPhysicalKeyDetector: onKeyUp() : KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=129982225, downTime=129982142, deviceId=-1, source=0x101 }
+12-10 07:46:54.536  1439  1439 D EmojiAltPhysicalKeyDetector: onKeyUp() : Not Mapped: 4
+12-10 07:46:54.553   197   821 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+12-10 07:46:54.553   784   794 I ActivityManager: Start proc 16846:com.android.chrome:sandboxed_process3/u0i5 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService3
+12-10 07:46:54.585   784   896 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 105]
+12-10 07:46:54.608 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8198): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.608 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8199): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.608 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8200): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.618 16846 16858 W FileUtils: Failed to chmod(/data/user/0/com.android.chrome/app_chrome): android.system.ErrnoException: chmod failed: EACCES (Permission denied)
+12-10 07:46:54.608 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8201): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.608 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8202): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.619 16846 16858 W ContextImpl: Unable to create files subdir /data/user/0/com.android.chrome/cache
+12-10 07:46:54.618 16858 16858 W com.android.chrome:sandboxed_process3: type=1400 audit(0.0:8203): avc: denied { search } for comm=4173796E635461736B202331 name="com.android.chrome" dev="mmcblk0p28" ino=1474619 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+12-10 07:46:54.622 16846 16846 I ChildProcessService: Creating new ChildProcessService pid=16846
+12-10 07:46:54.618  4334  4334 W .android.chrome: type=1400 audit(0.0:8204): avc: denied { ioctl } for path="socket:[501187]" dev="sockfs" ino=501187 ioctlcmd=7704 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8205): avc: denied { ioctl } for path="socket:[501187]" dev="sockfs" ino=501187 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=unix_stream_socket permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8206): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/natives_blob.bin" dev="mmcblk0p28" ino=1475370 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8207): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/snapshot_blob.bin" dev="mmcblk0p28" ino=1475422 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8208): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/chrome_100_percent.pak" dev="mmcblk0p28" ino=1474958 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8209): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/en-US.pak" dev="mmcblk0p28" ino=1475254 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8210): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/paks/resources.pak" dev="mmcblk0p28" ino=1475411 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8211): avc: denied { ioctl } for path="/data/data/com.android.chrome/cache/.com.google.Chrome.VET0P1" dev="mmcblk0p28" ino=1475651 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8212): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/icudtl.dat" dev="mmcblk0p28" ino=1475321 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.628 16856 16856 W Binder_1: type=1400 audit(0.0:8213): avc: denied { ioctl } for path="/data/data/com.android.chrome/app_chrome/icudtl.dat" dev="mmcblk0p28" ino=1475321 ioctlcmd=7704 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=0
+12-10 07:46:54.655 16846 16855 I art     : Background partial concurrent mark sweep GC freed 6573(361KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 14MB/24MB, paused 6.231ms total 21.469ms
+12-10 07:46:54.676 16846 16859 I LibraryLoader: Loading chrome directly from within /system/app/Chrome/Chrome.apk
+12-10 07:46:54.764 16846 16859 I LibraryLoader: Time to load native libraries: 90 ms (timestamps 2365-2455)
+12-10 07:46:54.764 16846 16859 I LibraryLoader: Expected native library version number "44.0.2403.133",actual native library version number "44.0.2403.133"
+12-10 07:46:54.766 16846 16859 I chromium: [INFO:library_loader_hooks.cc(120)] Chromium logging enabled: level = 0, default verbosity = 0
+12-10 07:46:55.256  1596  2189 I Icing   : Indexing 5A2F92AF701170F5D2713A4BB2E711321B2F263E from com.android.chrome
+12-10 07:46:55.298  1596  2189 I Icing   : Indexing done 5A2F92AF701170F5D2713A4BB2E711321B2F263E
+12-10 07:46:57.328  1596  2189 I Icing   : Usage reports 2 indexed 0 rejected 0 imm upload false
+12-10 07:46:57.376   207   317 I ThermalEngine: TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm raised 1 at 40.0 degC
+12-10 07:46:57.376   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[0] to 1958400
+12-10 07:46:57.376   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[1] to 1958400
+12-10 07:46:57.376   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[2] to 1958400
+12-10 07:46:57.376   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[3] to 1958400
+12-10 07:46:57.377   207   317 I ThermalEngine: ACTION: LCD - Setting max LCD brightness to 229
+12-10 07:46:57.720   197   821 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+12-10 07:46:57.721   197   821 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+12-10 07:47:08.745 16743 16810 E YouTube : (unknown) Could not do device auth handshake: TimeoutException - null
+12-10 07:47:11.030   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358223742, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:47:13.088  1109 16727 E GCM     : Missing checkin config file
+12-10 07:47:13.091  1109 16727 W GCM     : GCM FAILED TO INITIALIZE - missing checkin
+12-10 07:47:13.107 15129 16725 W EventLoggerService: Unable to send logs
+12-10 07:47:13.107 15129 16725 W EventLoggerService: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 65580 | Error code: 655362
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:146)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.br(S3LogSender.java:79)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.a(EventLoggerService.java:575)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.i(EventLoggerService.java:320)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.gB(EventLoggerService.java:245)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.eventlogger.EventLoggerService.onHandleIntent(EventLoggerService.java:236)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:66)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at android.os.Looper.loop(Looper.java:148)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 655362
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.n.a(HttpLogEntry.java:84)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.e.a(CronetSyncResponseInfo.java:51)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:178)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.a.c.c.a(CronetSyncHttpEngine.java:39)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.aac(HttpConnectionImpl.java:165)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.search.core.j.m.a(HttpConnectionImpl.java:158)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.b(S3RequestStream.java:66)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.j.a.a.a(S3RequestStream.java:52)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	at com.google.android.apps.gsa.speech.i.b.a(S3LogSender.java:144)
+12-10 07:47:13.107 15129 16725 W EventLoggerService: 	... 9 more
+12-10 07:47:13.107 15129 16725 W ErrorReporter: reportError [type: 211, code: 65580]: Error code: 65580 | Error code: 655362
+12-10 07:47:16.082   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358228792, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
+12-10 07:47:20.516   193   646 D MDnsDS  : MDnsSdListener::Monitor poll timed out
+12-10 07:47:20.517   193   646 D MDnsDS  : Going to poll with pollCount 1
+12-10 07:47:25.262 16743 16810 E YouTube : (unknown) Could not do device auth handshake: TimeoutException - null
+12-10 07:47:27.397   207   317 I ThermalEngine: TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm cleared 1 at 38.0 degC
+12-10 07:47:27.397   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[0] to 2265600
+12-10 07:47:27.397   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[1] to 2265600
+12-10 07:47:27.398   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[2] to 2265600
+12-10 07:47:27.398   207   317 I ThermalEngine: ACTION: CPU - Setting CPU[3] to 2265600
+12-10 07:47:27.399   207   317 I ThermalEngine: ACTION: LCD - Setting max LCD brightness to 255
+12-10 07:47:33.155   784  1663 D ConnectivityService: reportNetworkConnectivity(105, false) by 10010
+12-10 07:47:33.156   784 11730 D NetworkMonitor/NetworkAgentInfo [WIFI () - 105]: Forcing reevaluation for UID 10010
+12-10 07:47:33.213   784 11730 D NetworkMonitor/NetworkAgentInfo [WIFI () - 105]: Checking http://connectivitycheck.gstatic.com/generate_204 on "ASUS_5G", connectivitycheck.gstatic.com=203.208.40.55
+12-10 07:47:33.232   784 11730 D NetworkMonitor/NetworkAgentInfo [WIFI () - 105]: isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Date=[Mon, 10 Dec 2018 12:47:35 GMT], X-Android-Received-Millis=[1544446053231], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1544446053223]}
+12-10 07:47:33.232   784   896 D ConnectivityService: setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+12-10 07:47:33.232   784   896 D ConnectivityService: NetworkAgentInfo [WIFI () - 105] validation  passed
+12-10 07:47:37.375   207   317 I ThermalEngine: TM Id 'battery_LCD_monitor' Sensor 'batt_therm' - alarm cleared 3 at 340.0 degC
+12-10 07:47:37.375   207   317 E ThermalEngine: override action 7500
+12-10 07:47:37.376   207   317 E ThermalEngine: Thermal-Server: Thermal received msg override 7500
+12-10 07:47:37.376   207   317 E ThermalEngine: override_notify : SS mode 1 override 7500
+12-10 07:47:44.141 16743 16810 E YouTube : (unknown) Could not do device auth handshake: TimeoutException - null
+12-10 07:47:51.326 16617 16646 W chromium: [WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+12-10 07:47:51.326 16617 16646 W chromium: [WARNING:channel.cc(315)] RawChannel write error
+12-10 07:47:51.328   188   188 E lowmemorykiller: Error writing /proc/16617/oom_score_adj; errno=22
+12-10 07:47:51.330   188   188 E lowmemorykiller: Error writing /proc/16617/oom_score_adj; errno=22
+12-10 07:47:51.331   784  1541 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 2752)
+12-10 07:47:51.332   784  1541 W ActivityManager: Exception when unbinding service com.android.chrome/org.chromium.content.app.SandboxedProcessService2
+12-10 07:47:51.332   784  1541 W ActivityManager: android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at android.os.BinderProxy.transactNative(Native Method)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at android.os.BinderProxy.transact(Binder.java:503)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at android.app.ApplicationThreadProxy.scheduleUnbindService(ApplicationThreadNative.java:956)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at com.android.server.am.ActiveServices.removeConnectionLocked(ActiveServices.java:1874)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at com.android.server.am.ActiveServices.unbindServiceLocked(ActiveServices.java:926)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at com.android.server.am.ActivityManagerService.unbindService(ActivityManagerService.java:16013)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:996)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2484)
+12-10 07:47:51.332   784  1541 W ActivityManager: 	at android.os.Binder.execTransact(Binder.java:453)
+12-10 07:47:51.332   188   188 E lowmemorykiller: Error writing /proc/16617/oom_score_adj; errno=22
+12-10 07:47:51.419   784  1716 I ActivityManager: Process com.android.chrome:sandboxed_process2 (pid 16617) has died
+12-10 07:47:51.419   784  1716 D ActivityManager: cleanUpApplicationRecord -- 16617
+12-10 07:47:54.000  1439  4271 I Keyboard.Facilitator.LanguageModelFlusher: run()
+12-10 07:47:54.000  1439  4271 I Keyboard.Facilitator: flushDynamicLanguageModels()
+12-10 07:47:54.055  1109  1109 I ConfigService: onCreate
+12-10 07:47:59.155  1109  1109 I ConfigService: onDestroy
+12-10 07:48:05.141 16743 16810 E YouTube : (unknown) Could not do device auth handshake: TimeoutException - null
+12-10 07:48:10.230   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358282942, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_STALE}
+12-10 07:48:15.340   784 11731 D NetlinkSocketObserver: NeighborEvent{elapsedMs=358288052, 192.168.50.1, [704D7B514A20], RTM_NEWNEIGH, NUD_PROBE}
