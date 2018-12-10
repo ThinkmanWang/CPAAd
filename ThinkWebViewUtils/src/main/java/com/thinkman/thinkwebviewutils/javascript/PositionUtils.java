@@ -24,7 +24,6 @@ public class PositionUtils {
                 "   for (var i = 0; i < elementList.length; i++) { " +
                 "       var rect = elementList[i].getBoundingClientRect(); " +
                 "       if (rect.top >= 0) { " +
-//                "           alert('FXXK ' + rect.left + ',' + rect.top + ',' + rect.width + ',' + rect.height); " +
                 "           positionUtils.positionGot(rect.left, rect.top, rect.width, rect.height); " +
                 "           return;" +
                 "       } " +

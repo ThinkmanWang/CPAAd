@@ -7,8 +7,11 @@ import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.webkit.ConsoleMessage;
 import android.webkit.JsResult;
 import android.webkit.SslErrorHandler;
+import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -25,6 +28,7 @@ import com.thinkman.thinkwebviewutils.view.utils.TouchEventUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,8 +62,72 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @OnClick(R.id.btn_call_js)
+    public void callJs() {
+
+//        String szJS = "javascript: (function() { return window.scrollY; })()";
+        String szJS = "javascript: (function() { return window.scrollY; })()";
+        m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String value) {
+                ThinkLog.debug("THINKMAN", value);
+            }
+        });
+
+//        m_wvMain.writeValToLocalData("FXXK", new ValueCallback<String>() {
+//            @Override
+//            public void onReceiveValue(String value) {
+//                ThinkLog.debug("THINKMAN", value);
+//            }
+//        });
+
+//        m_wvMain.getLogId(new ValueCallback<String>() {
+//            @Override
+//            public void onReceiveValue(String value) {
+//                ThinkLog.debug("THINKMAN", value);
+//            }
+//        });
+
+//        final String JS = "window.location.href = 'https://www.baidu.com'";
+//        m_wvMain.evaluateJavascript("window.location.href = 'https://www.baidu.com'", new ValueCallback<String>() {
+//            @Override
+//            public void onReceiveValue(String value) {
+//                ThinkLog.debug("THINKMAN", value);
+//            }
+//        });
+//
+//
+//
+//        String szText = "长期";
+//        m_wvMain.findFirstVisibleElementByClassText("item-info", szText, new ValueCallback<String>() {
+//            @Override
+//            public void onReceiveValue(String value) {
+//                ThinkLog.debug("THINKMAN", value);
+//            }
+//        });
+    }
+
     private void initWebView() {
-        this.m_wvMain.setWebViewClient(new MyViewClient(this));
+//        this.m_wvMain.setWebViewClient(new WebViewClient());
+        WebView.setWebContentsDebuggingEnabled(true);
+        m_wvMain.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+
+                WebView.HitTestResult hitTestResult = view.getHitTestResult();
+                if (!TextUtils.isEmpty(url) && hitTestResult == null) {
+                    view.loadUrl(url);
+                    return true;
+                }
+
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+        });
+
+
+        this.m_wvMain.setClickable(true);
+//        this.m_wvMain.setWebChromeClient(new WebChromeClient());
 
         this.m_wvMain.setWebChromeClient(new WebChromeClient() {
             public void onHideCustomView() {}
@@ -75,11 +143,18 @@ public class MainActivity extends AppCompatActivity {
             public void onReceivedTitle(WebView paramAnonymousWebView, String paramAnonymousString) {
                 super.onReceivedTitle(paramAnonymousWebView, paramAnonymousString);
             }
+
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                ThinkLog.debug("THINKMAN", consoleMessage.message() + " -- From line "
+                        + consoleMessage.lineNumber() + " of "
+                        + consoleMessage.sourceId());
+                return super.onConsoleMessage(consoleMessage);
+            }
         });
 
         WebSettings webSettings = this.m_wvMain.getSettings();
         webSettings.setSupportZoom(false);
-        webSettings.setGeolocationEnabled(false);
         if (Build.VERSION.SDK_INT >= 21) {
             try {
                 this.m_wvMain.getSettings().setMixedContentMode(0);
@@ -88,9 +163,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        webSettings.setBuiltInZoomControls(false);
+        webSettings.setBuiltInZoomControls(true);
         webSettings.setJavaScriptEnabled(true);
-//        webSettings.supportMultipleWindows();
+        webSettings.supportMultipleWindows();
         webSettings.setDomStorageEnabled(true);
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
@@ -103,92 +178,13 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setSaveFormData(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 
-        this.m_wvMain.addJavascriptInterface(new WebScreenInfoUtils(), "screenInfoUtils");
-        this.m_wvMain.addJavascriptInterface(new PositionUtils(), "positionUtils");
-    }
+        webSettings.setAllowContentAccess(true);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setAllowFileAccessFromFileURLs(true);
+        webSettings.setBlockNetworkLoads(false);
+        webSettings.setDatabaseEnabled(true);
+        webSettings.setGeolocationEnabled(true);
 
-    class MyViewClient extends WebViewClient {
-        public MyViewClient(Context paramContext) {
 
-        }
-
-        public void onLoadResource(WebView paramWebView, String paramString) {
-
-        }
-
-        public void onPageFinished(WebView paramWebView, String paramString) {
-            super.onPageFinished(paramWebView, paramString);
-
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    WebScreenInfoUtils.collectScreenInfoJs(m_wvMain, new WebScreenInfoUtils.OnWebScreenInfoListener() {
-                        @Override
-                        public void onGetScreenInfo(int nWidth, int nHeight) {
-                            ThinkLog.debug("THINKMAN", "[" + nWidth + ":" + nHeight + "]");
-                        }
-                    });
-
-                    PositionUtils.findFirstVisibleElementByClassName(m_wvMain, "item-info", new PositionUtils.PositionListener() {
-                        @Override
-                        public void onPositionGot(int nLeft, int nTop, int nWidth, int nHeight) {
-                            String szPos = String.format("(%d, %d, %d, %d)", nLeft, nTop, nWidth, nHeight);
-                            ThinkLog.debug("THINKMAN", szPos);
-
-                            int nX = nLeft + RandomUtils.random(0, nWidth);
-                            int nY = nTop + RandomUtils.random(0, nHeight);
-
-                            ThinkLog.debug("THINKMAN", "click at (" + nX + "," + nY + ")");
-                            TouchEventUtils.dispatchClieckEvent(m_wvMain, nX, nY);
-                        }
-                    });
-
-                }
-            }, 3000);
-
-//            mHandler.postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    TouchEventUtils.scrollUp(m_wvMain);
-//                }
-//            }, 4000);
-//
-//            mHandler.postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    TouchEventUtils.scrollDown(m_wvMain);
-//                }
-//            }, 5000);
-
-        }
-
-        public void onPageStarted(WebView paramWebView, String paramString, Bitmap paramBitmap) {
-            ThinkLog.debug("THINKMAN", paramString);
-        }
-
-        public void onReceivedError(WebView paramWebView, int paramInt, String paramString1, String paramString2) {
-            super.onReceivedError(paramWebView, paramInt, paramString1, paramString2);
-        }
-
-        public void onReceivedSslError(WebView paramWebView, SslErrorHandler paramSslErrorHandler, SslError paramSslError)
-        {
-            paramSslErrorHandler.proceed();
-        }
-
-        public WebResourceResponse shouldInterceptRequest(WebView paramWebView, WebResourceRequest paramWebResourceRequest)
-        {
-            ThinkLog.debug("THINKMAN", paramWebResourceRequest.getUrl().toString());
-            return super.shouldInterceptRequest(paramWebView, paramWebResourceRequest);
-        }
-
-        public boolean shouldOverrideUrlLoading(WebView paramWebView, WebResourceRequest paramWebResourceRequest)
-        {
-            return super.shouldOverrideUrlLoading(paramWebView, paramWebResourceRequest);
-        }
-
-        public boolean shouldOverrideUrlLoading(WebView paramWebView, String paramString) {
-            ThinkLog.debug("THINKMAN", paramString);
-            return false;
-        }
     }
 }
