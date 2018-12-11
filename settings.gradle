@@ -1,1 +1,1 @@
-include ':app', ':ThinkWebViewUtils', ':PositionTest', ':ThinkUtils', ':tbsx5test'
+include ':app', ':ThinkWebViewUtils', ':PositionTest', ':ThinkUtils', ':tbsx5test', ':XWalkViewTest'
