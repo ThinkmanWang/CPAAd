@@ -19,10 +19,25 @@ android {
         }
     }
 
+    signingConfigs {
+        release {
+            storeFile file("../athene.keystore.jks")
+            storePassword "12345678"
+            keyAlias "athene"
+            keyPassword "12345678"
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
