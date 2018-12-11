@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.tencent.smtt.export.external.interfaces.JsResult;
+import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebSettings;
 import com.tencent.smtt.sdk.WebView;
@@ -12,6 +13,7 @@ import com.thinkman.thinkutils.ThinkLog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,6 +43,17 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return;
         }
+    }
+
+    @OnClick(R.id.btn_run_js)
+    public void runJs() {
+        String szJS = "javascript: (function() { return window.localData.logid; })()";
+        m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String value) {
+                ThinkLog.debug("THINKMAN", value);
+            }
+        });
     }
 
     public void initWebView() {
