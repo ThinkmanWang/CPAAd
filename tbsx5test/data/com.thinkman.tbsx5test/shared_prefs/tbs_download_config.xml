@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="is_oversea" value="false" />
+    <int name="tbs_install_interrupt_code" value="-508" />
+    <int name="tbs_download_failed_retrytimes" value="0" />
+    <int name="tbs_download_interrupt_code_reason" value="-123" />
+    <long name="tbs_downloadflow" value="29299276" />
+    <long name="retry_interval" value="86400" />
+    <long name="last_check" value="1544507504602" />
+    <string name="tbs_downloadurl_list">https://softtbs.myapp.com/17421/tbs_res_imtt_tbs_release_tbs_core_4.4.0.1134_044405_20181124_163531_nolg_fs_obfs.tbs</string>
+    <long name="count_request_fail_in_24hours" value="0" />
+    <long name="tbs_downloadstarttime" value="1544507504769" />
+    <int name="tbs_downloaddecouplecore" value="0" />
+    <int name="app_versioncode" value="1" />
+    <int name="tbs_download_failed_max_retrytimes" value="10" />
+    <string name="last_thirdapp_sendrequest_coreversion">[]</string>
+    <string name="app_versionname">1.0</string>
+    <string name="tbs_deskey_token">e46139173f1bec60a125d5ad12f64d336ec36dec1e89c124c585c490acf16a96afdf58334e250430ea9952e7aba5cc08&amp;220361166296196219730372</string>
+    <string name="tbs_downloadurl">http://soft.tbs.imtt.qq.com/17421/tbs_res_imtt_tbs_release_tbs_core_4.4.0.1134_044405_20181124_163531_nolg_fs_obfs.tbs</string>
+    <boolean name="tbs_needdownload" value="false" />
+    <long name="tbs_single_timeout" value="1200000" />
+    <int name="tbs_download_maxflow" value="300" />
+    <string name="device_cpuabi">armv7l</string>
+    <long name="tbs_download_interrupt_time" value="1544507565926" />
+    <int name="use_backup_version" value="0" />
+    <int name="tbs_download_min_free_space" value="0" />
+    <long name="request_fail" value="0" />
+    <long name="tbs_apkfilesize" value="29299276" />
+    <string name="tbs_apk_md5">dcc55e9b79621368d4be8db6fa0e67f5</string>
+    <int name="tbs_download_version" value="44405" />
+    <long name="last_request_success" value="1544507504668" />
+    <int name="tbs_decouplecoreversion" value="0" />
+    <int name="tbs_download_success_max_retrytimes" value="3" />
+    <int name="tbs_download_interrupt_code" value="-119" />
+    <int name="tbs_download_success_retrytimes" value="1" />
+    <boolean name="request_full_package" value="false" />
+    <int name="tbs_responsecode" value="1" />
+    <int name="tbs_download_version_type" value="0" />
+</map>

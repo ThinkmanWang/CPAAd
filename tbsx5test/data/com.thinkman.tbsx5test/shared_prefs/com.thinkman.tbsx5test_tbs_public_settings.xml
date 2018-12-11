@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="key_should_merger_qb_guid" value="true" />
+    <int name="TBS_QBPUSH_START_SERVICE_SWITCH" value="0" />
+    <int name="ANDROID_MIDPAGE_INST_BLOCK_DLG" value="1" />
+    <int name="key_qvod_support_type" value="1" />
+    <int name="key_tbs_general_feature_switch_new_long_press_download_intercept_open_qb_method" value="0" />
+    <int name="key_download_intercept_switch" value="2" />
+    <int name="key_tbs_general_feature_switch_translate_on_long_press" value="1" />
+    <int name="key_tbs_general_feature_switch_game_embedded_framework_load_wxpay_background" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_headsup_risk_website">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_tbs_jsapi">044405</string>
+    <boolean name="key_bugly_enable" value="false" />
+    <string name="key_tbs_general_feature_switch_core_version_splice_miniqb_ad">044405</string>
+    <int name="key_extend_rule_version" value="31" />
+    <boolean name="key_tbs_info_upload_argument_switcher" value="true" />
+    <int name="key_tbs_general_feature_switch_intercept_download_request" value="0" />
+    <string name="key_tbs_former_tbscore_version">044405</string>
+    <int name="key_tbs_general_feature_switch_invoke_qb_night_mode_and_fullscreen" value="1" />
+    <boolean name="key_can_use_adblock_under_direct" value="true" />
+    <string name="key_tbs_general_feature_switch_core_version_bubble_ad">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_long_press_menu">044405</string>
+    <int name="key_tbs_general_feature_switch_tbs_jsapi" value="1" />
+    <int name="ANDROID_FILE_READER_EDIT_BUTTON_GRAY" value="1" />
+    <string name="key_tbs_general_feature_switch_core_version_invoke_qb_night_mode_and_fullscreen">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_clear_qb_silent_download_file">044405</string>
+    <int name="key_tbs_general_feature_switch_click_image_scan" value="0" />
+    <int name="key_tbs_general_feature_switch_headsup_risk_website" value="0" />
+    <boolean name="key_wup_server_ever_failed_WIFI1UNKNOW46002wup" value="false" />
+    <int name="key_android_enable_qua1" value="0" />
+    <int name="key_tpg_enabled" value="1" />
+    <string name="key_tbs_general_feature_switch_core_version_game_embedded_framework_load_wxpay_background">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_qb_silent_download_default">044405</string>
+    <int name="key_tbs_info_upload_argument_apn" value="65535" />
+    <int name="ANDROID_FILE_READER_ADV_FEATURE_GRAY" value="1" />
+    <int name="key_tbs_general_feature_switch_mid_page_qb_openbrowser_onlongpress" value="1" />
+    <int name="key_tbs_general_feature_switch_long_press_menu" value="1" />
+    <string name="key_tbs_general_feature_switch_core_version_new_long_press_download_intercept_open_qb_method">044405</string>
+    <boolean name="key_last_req_from_test_evn_domainList" value="false" />
+    <string name="key_tbs_general_feature_switch_core_version_intercept_download_request">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_translate_on_long_press">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_headsup_taobao_link">044405</string>
+    <int name="key_tbs_general_feature_switch_native_show_push" value="1" />
+    <int name="key_tbs_general_feature_switch_mid_page_qb_search_onlongpress" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_refresh">044405</string>
+    <boolean name="key_preference_enable_rsa_aes_encrypt" value="true" />
+    <string name="key_extend_rule_md5">c2ee1161a76dd0a71251f62b5b38d684</string>
+    <int name="key_tbs_general_feature_switch_bubble_miniqb_ad" value="1" />
+    <int name="key_environment_type" value="2" />
+    <string name="key_tbs_webview_search_engine_url">http://m.sogou.com/web/searchList.jsp?pid=sogou-clse-2996962656838a97&amp;e=1427&amp;g_f=123&amp;keyword=</string>
+    <string name="TBS_AD_COMPETITOR_REPORT_RATIO_CONTROL">[9584,9584]</string>
+    <int name="key_tbs_general_feature_switch_headsup_transcoding_page" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_click_image_scan">044405</string>
+    <int name="key_android_enable_qua2_v3" value="1" />
+    <boolean name="key_spa_ad_page_report" value="true" />
+    <int name="key_tbs_general_feature_switch_long_press_menu_select_copy" value="1" />
+    <string name="key_tbs_general_feature_switch_core_version_search_on_long_press">044405</string>
+    <boolean name="key_tbs_info_upload_needproxy" value="true" />
+    <string name="key_tbs_general_feature_switch_core_version_mid_page_qb_openbrowser_onlongpress">044405</string>
+    <int name="IOS_USE_SMART_ADFILTER" value="0" />
+    <int name="key_notify_download_qb_times_limit" value="1000" />
+    <int name="ANDROID_FILE_READER_LIST_ALL_FILE_GRAY" value="1" />
+    <boolean name="key_has_ever_login" value="true" />
+    <int name="key_direct_adblock_switcher_level" value="1" />
+    <int name="key_can_convert_get_to_post" value="2" />
+    <boolean name="key_last_req_from_test_evn_preference" value="false" />
+    <int name="key_wifi_download_or_inst_dlg_type" value="2" />
+    <string name="key_tbs_general_feature_switch_core_version_tbs_clipboard">044405</string>
+    <int name="WIFI_VIDEO_MASTER_SWITCH" value="0" />
+    <int name="key_tbs_general_feature_switch_headsup_taobao_link" value="0" />
+    <int name="key_tbs_general_feature_switch_splice_miniqb_ad" value="1" />
+    <int name="key_tbs_general_feature_switch_long_press_menu_night_mode" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_bubble_miniqb_ad">044405</string>
+    <int name="key_night_mode_in_long_press_switch" value="0" />
+    <int name="key_tbs_general_feature_switch_long_press_menu_open_in_browser" value="0" />
+    <boolean name="key_disk_cache_size" value="true" />
+    <boolean name="key_extend_rule_pdated" value="true" />
+    <string name="key_tbs_general_feature_switch_core_version_file_chooser_tbs">044405</string>
+    <int name="key_tbs_general_feature_switch_search_on_long_press" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_mid_page_qb_search_onlongpress">044405</string>
+    <int name="CUSTOM_HOSTS_SWITCH" value="1" />
+    <int name="key_preference_update_time" value="1542702082" />
+    <string name="key_tbs_general_feature_switch_core_version_midpage_translate_onlongpress">044405</string>
+    <long name="key_last_check_basic_config_date0" value="1544507565517" />
+    <string name="key_tbs_general_feature_switch_core_version_long_press_menu_refresh">044405</string>
+    <int name="PREFERENCE_TYPE_WUP_ENVIRONMENT" value="0" />
+    <boolean name="key_isinwup_upload_pv" value="false" />
+    <string name="key_tbs_general_feature_switch_core_version_headsup_transcoding_page">044405</string>
+    <int name="MINIQB_VIDEO_DEFAULT_SCREEN" value="1" />
+    <int name="key_prerender_swtich" value="1" />
+    <int name="key_tbs_general_feature_switch_midpage_translate_onlongpress" value="0" />
+    <int name="key_tbs_general_feature_switch_qb_silent_download_default" value="0" />
+    <int name="key_save_webpage_in_long_press_switch" value="0" />
+    <int name="key_tbs_general_feature_switch_long_press_menu_refresh" value="0" />
+    <boolean name="key_jni_register_enabled" value="true" />
+    <int name="key_tbs_general_feature_switch_splice_ad" value="1" />
+    <int name="key_tbs_general_feature_switch_refresh" value="0" />
+    <long name="key_last_check_wup_config_date" value="1544507565527" />
+    <string name="key_tbs_general_feature_switch_core_version_long_press_menu_open_in_browser">044405</string>
+    <int name="key_tbs_general_feature_switch_tbs_clipboard" value="1" />
+    <int name="VIDEO_DOWNLOAD_QB_SILENTLY" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_splice_ad">044405</string>
+    <int name="ANDROID_MIDPAGE_INSTALL_QB_TIPS" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_long_press_menu_select_copy">044405</string>
+    <int name="key_tbs_general_feature_switch_clear_qb_silent_download_file" value="1" />
+    <int name="key_tbs_general_feature_switch_bubble_ad" value="1" />
+    <int name="key_tbs_general_feature_switch_file_chooser_tbs" value="0" />
+    <string name="key_tbs_general_feature_switch_core_version_long_press_menu_night_mode">044405</string>
+    <string name="key_tbs_general_feature_switch_core_version_native_show_push">044405</string>
+</map>

@@ -1,0 +1,10 @@
+#update incrupdate_status and status!
+#Tue Dec 11 13:51:44 GMT+08:00 2018
+install_status=3
+install_core_ver=0
+dexopt_retry_num=0
+unlzma_status=0
+unzip_retry_num=0
+install_apk_path=
+incrupdate_status=-1
+incrupdate_retry_num=0

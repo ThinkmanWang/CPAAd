@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="has_local_qb" value="false" />
+    <string name="current_tbsversion">044405</string>
+    <long name="last_report_time" value="1544507524309" />
+    <boolean name="qb_auto_download_wifi" value="false" />
+</map>
