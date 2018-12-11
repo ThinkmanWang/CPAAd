@@ -8,12 +8,15 @@ android {
     defaultConfig {
         applicationId "com.thinkman.xwalkviewtest"
         minSdkVersion 22
-        targetSdkVersion 28
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
     }
 
     buildTypes {
