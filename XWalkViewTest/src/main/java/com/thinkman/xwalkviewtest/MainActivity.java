@@ -63,6 +63,7 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btn_run_js)
     public void runJs() {
         String szJS = "javascript: (function() { return window.localData.logid; })()";
+        
         m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
             @Override
             public void onReceiveValue(String value) {
