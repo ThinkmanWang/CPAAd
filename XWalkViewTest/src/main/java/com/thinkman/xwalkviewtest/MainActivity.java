@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.webkit.ValueCallback;
 
 import com.thinkman.thinkutils.ThinkLog;
+import com.thinkman.view.ThinkWebView;
 
 import org.xwalk.core.XWalkNavigationHistory;
 import org.xwalk.core.XWalkPreferences;
@@ -18,7 +19,7 @@ public class MainActivity extends BaseActivity {
     public static final String URL = "https://se.nuomi.com/phasterse/middle/smindex?version=2.0.0&format=1&eid=100850&query=%E5%AE%B6%E8%A3%85&nmtradeid=2369&from=cps&us=cpstpsj413&nmcid=cpstpsj413&cid=cpstpsj413&prod=nmwbdl&ip=222.95.250.239&gps=&nmcityid=700010000&nuomisid=1007&fegps=118.8000587%2C31.948233300000002";
 
     @BindView(R.id.wv_main)
-    XWalkView m_wvMain = null;
+    ThinkWebView m_wvMain = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,7 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btn_run_js)
     public void runJs() {
         String szJS = "javascript: (function() { return window.localData.logid; })()";
-        
+
         m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
             @Override
             public void onReceiveValue(String value) {

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="RUN JS" />
 
-    <org.xwalk.core.XWalkView
+    <com.thinkman.view.ThinkWebView
         android:id="@+id/wv_main"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
