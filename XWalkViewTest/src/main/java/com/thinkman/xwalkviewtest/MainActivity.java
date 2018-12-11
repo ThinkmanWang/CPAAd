@@ -1,6 +1,9 @@
 package com.thinkman.xwalkviewtest;
 
 import android.os.Bundle;
+import android.webkit.ValueCallback;
+
+import com.thinkman.thinkutils.ThinkLog;
 
 import org.xwalk.core.XWalkNavigationHistory;
 import org.xwalk.core.XWalkPreferences;
@@ -8,6 +11,7 @@ import org.xwalk.core.XWalkView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
@@ -54,5 +58,16 @@ public class MainActivity extends BaseActivity {
 //        m_wvMain.getSettings().setSavePassword(true);
         m_wvMain.getSettings().setSaveFormData(true);
         m_wvMain.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+    }
+
+    @OnClick(R.id.btn_run_js)
+    public void runJs() {
+        String szJS = "javascript: (function() { return window.localData.logid; })()";
+        m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String value) {
+                ThinkLog.debug("THINKMAN", value);
+            }
+        });
     }
 }

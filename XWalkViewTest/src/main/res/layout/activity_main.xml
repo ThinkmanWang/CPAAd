@@ -6,9 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn_run_js"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RUN JS" />
+
     <org.xwalk.core.XWalkView
         android:id="@+id/wv_main"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_run_js" />
 
 </android.support.constraint.ConstraintLayout>
