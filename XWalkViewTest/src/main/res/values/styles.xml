@@ -1,11 +1,46 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 The Chromium Authors. All rights reserved.
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file.
+-->
+<resources>
+  
+    
+  <style name="SelectPopupDialog">
+    
+        
+    <item name="select_dialog_singlechoice">@android:layout/select_dialog_singlechoice</item>
+    
+        
+    <item name="select_dialog_multichoice">@android:layout/select_dialog_multichoice</item>
+    
+    
+  </style>
+  
+    
+  <style name="SelectActionMenuShare">
+    
+        
+    <item name="android:icon">@drawable/ic_menu_share_holo_light</item>
+    
+    
+  </style>
+  
+    
+  <style name="SelectActionMenuWebSearch">
+    
+        
+    <item name="android:icon">@drawable/ic_search</item>
+    
+    
+  </style>
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  
 
 </resources>
