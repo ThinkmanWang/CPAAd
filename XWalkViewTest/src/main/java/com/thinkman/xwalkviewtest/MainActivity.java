@@ -38,6 +38,21 @@ public class MainActivity extends BaseActivity {
 
     public void initWebView() {
         XWalkPreferences.setValue(XWalkPreferences.ENABLE_JAVASCRIPT, true);
-//     XWalkPreferences.setValue(XWalkPreferences.REMOTE_DEBUGGING, true);
+        XWalkPreferences.setValue(XWalkPreferences.REMOTE_DEBUGGING, true);
+
+        m_wvMain.getSettings().setSupportZoom(false);
+//        m_wvMain.getSettings().setGeolocationEnabled(false);
+        m_wvMain.getSettings().setBuiltInZoomControls(false);
+//        webSettings.supportMultipleWindows();
+        m_wvMain.getSettings().setDomStorageEnabled(true);
+        m_wvMain.getSettings().setUseWideViewPort(true);
+        m_wvMain.getSettings().setLoadWithOverviewMode(true);
+        m_wvMain.getSettings().setLoadsImagesAutomatically(true);
+
+//        m_wvMain.getSettings().setAppCacheEnabled(true);
+        m_wvMain.getSettings().setAllowContentAccess(true);
+//        m_wvMain.getSettings().setSavePassword(true);
+        m_wvMain.getSettings().setSaveFormData(true);
+        m_wvMain.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
     }
 }
