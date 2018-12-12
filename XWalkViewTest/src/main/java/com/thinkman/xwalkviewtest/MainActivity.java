@@ -3,11 +3,15 @@ package com.thinkman.xwalkviewtest;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.KeyEvent;
 import android.webkit.ValueCallback;
 
+import com.thinkman.thinkutils.RandomUtils;
 import com.thinkman.thinkutils.ThinkLog;
+import com.thinkman.thinkutils.TouchEventUtils;
 import com.thinkman.view.ThinkWebView;
 
+import org.json.JSONObject;
 import org.xwalk.core.XWalkNavigationHistory;
 import org.xwalk.core.XWalkPreferences;
 import org.xwalk.core.XWalkResourceClient;
@@ -25,6 +29,8 @@ public class MainActivity extends BaseActivity {
     ThinkWebView m_wvMain = null;
 
     MyHandler mHandler = new MyHandler();
+
+    private boolean m_bPageLoaded = false;
 
     private class MyHandler extends Handler {
 
@@ -81,7 +87,12 @@ public class MainActivity extends BaseActivity {
         m_wvMain.setResourceClient(new XWalkResourceClient(m_wvMain) {
             @Override
             public void onLoadFinished(XWalkView view, String url) {
-                mHandler.sendEmptyMessageAtTime(MyHandler.MSG_PAGE_LOAD_FINISHED, 1000);
+                if (false == m_bPageLoaded) {
+                    m_bPageLoaded = true;
+                    mHandler.sendEmptyMessageAtTime(MyHandler.MSG_PAGE_LOAD_FINISHED, 1000);
+                } else {
+
+                }
             }
         });
     }
@@ -108,14 +119,68 @@ public class MainActivity extends BaseActivity {
     public void startDoNuomi() {
         ThinkLog.debug("THINKMAN", "Start do nuomi");
 
-//        new Thread(
-//                new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        ThinkLog.debug("THINKMAN", "FXXK");
-//                    }
-//                }
-//        ).start();
+        int nTime = 0;
+        int nRand = RandomUtils.random(0, 10);
+        ThinkLog.debug("THINKMAN", "scroll " + nRand + " times");
+
+        for (int i = 0; i < nRand; ++i) {
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    ThinkLog.debug("THINKMAN", "scroll webview");
+                    TouchEventUtils.scrollUp(m_wvMain);
+                }
+            }, i * 1000 + 1000);
+        }
+
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                m_wvMain.findFirstVisibleElementByClassName("item-info", new ValueCallback<String>() {
+                    @Override
+                    public void onReceiveValue(String value) {
+                        ThinkLog.debug("THINKMAN", value);
+
+                        try {
+                            JSONObject jObj = new JSONObject(value);
+
+                            ThinkLog.debug("THINKMAN", "Click at " + jObj.getString("text"));
+
+                            TouchEventUtils.dispatchClieckEvent(m_wvMain
+                                    , jObj.getInt("left")
+                                    , jObj.getInt("top")
+                                    , jObj.getInt("width")
+                                    , jObj.getInt("height"));
+                            jObj.getInt("top");
+
+                            mHandler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    ThinkLog.debug("THINKMAN", "press back");
+                                    if (m_wvMain.getNavigationHistory().canGoBack()) {
+                                        m_wvMain.getNavigationHistory().navigate(XWalkNavigationHistory.Direction.BACKWARD, 1) ;
+                                    }
+                                }
+                            }, 5000);
+                            mHandler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    ThinkLog.debug("THINKMAN", "press back");
+                                    if (m_wvMain.getNavigationHistory().canGoBack()) {
+                                        m_wvMain.getNavigationHistory().navigate(XWalkNavigationHistory.Direction.BACKWARD, 1) ;
+                                    }
+                                }
+                            }, 6000);
+                        } catch (Exception ex) {
+
+                        }
+
+                    }
+                });
+            }
+        }, 10 * 1000);
+
+
     }
 
 }
