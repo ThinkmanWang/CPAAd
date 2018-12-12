@@ -1,6 +1,8 @@
 package com.thinkman.xwalkviewtest;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.webkit.ValueCallback;
 
 import com.thinkman.thinkutils.ThinkLog;
@@ -8,6 +10,7 @@ import com.thinkman.view.ThinkWebView;
 
 import org.xwalk.core.XWalkNavigationHistory;
 import org.xwalk.core.XWalkPreferences;
+import org.xwalk.core.XWalkResourceClient;
 import org.xwalk.core.XWalkView;
 
 import butterknife.BindView;
@@ -20,6 +23,21 @@ public class MainActivity extends BaseActivity {
 
     @BindView(R.id.wv_main)
     ThinkWebView m_wvMain = null;
+
+    MyHandler mHandler = new MyHandler();
+
+    private class MyHandler extends Handler {
+
+        public static final int MSG_PAGE_LOAD_FINISHED = 0;
+
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case MSG_PAGE_LOAD_FINISHED:
+                    MainActivity.this.startDoNuomi();
+                    break;
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,17 +77,45 @@ public class MainActivity extends BaseActivity {
 //        m_wvMain.getSettings().setSavePassword(true);
         m_wvMain.getSettings().setSaveFormData(true);
         m_wvMain.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+
+        m_wvMain.setResourceClient(new XWalkResourceClient(m_wvMain) {
+            @Override
+            public void onLoadFinished(XWalkView view, String url) {
+                mHandler.sendEmptyMessageAtTime(MyHandler.MSG_PAGE_LOAD_FINISHED, 1000);
+            }
+        });
     }
 
     @OnClick(R.id.btn_run_js)
     public void runJs() {
-        String szJS = "javascript: (function() { return window.localData.logid; })()";
+//        String szJS = "javascript: (function() { return window.localData.logid; })()";
+//
+//        m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
+//            @Override
+//            public void onReceiveValue(String value) {
+//                ThinkLog.debug("THINKMAN", value);
+//            }
+//        });
 
-        m_wvMain.evaluateJavascript(szJS, new ValueCallback<String>() {
+        m_wvMain.findFirstVisibleElementByClassName("item-info", new ValueCallback<String>() {
             @Override
             public void onReceiveValue(String value) {
                 ThinkLog.debug("THINKMAN", value);
             }
         });
     }
+
+    public void startDoNuomi() {
+        ThinkLog.debug("THINKMAN", "Start do nuomi");
+
+//        new Thread(
+//                new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        ThinkLog.debug("THINKMAN", "FXXK");
+//                    }
+//                }
+//        ).start();
+    }
+
 }

@@ -43,10 +43,10 @@ public class ThinkWebView extends XWalkView {
                 "       " +
                 "       var rect = elementList[i].getBoundingClientRect(); " +
                 "       if (rect.top >= 0) { " +
-                "           return {'left': parseInt(rect.left), 'top': parseInt(rect.top), 'width': parseInt(rect.width), 'height': parseInt(rect.height)}; " +
+                "           return {'left': parseInt(rect.left), 'top': parseInt(rect.top), 'width': parseInt(rect.width), 'height': parseInt(rect.height), 'text': 'FXXK'}; " +
                 "       } " +
                 "   } " +
-                "   return {'left': 0, 'top': 0, 'width': 0, 'height': 0}; " +
+                "   return {'left': 0, 'top': 0, 'width': 0, 'height': 0, 'text': ''}; " +
                 "})()", resultCallback);
     }
 
@@ -56,10 +56,10 @@ public class ThinkWebView extends XWalkView {
                 "   for (var i = 0; i < elementList.length; i++) { " +
                 "       var rect = elementList[i].getBoundingClientRect(); " +
                 "       if (rect.top >= 0) { " +
-                "           return {'left': parseInt(rect.left), 'top': parseInt(rect.top), 'width': parseInt(rect.width), 'height': parseInt(rect.height)};" +
+                "           return {'left': parseInt(rect.left), 'top': parseInt(rect.top), 'width': parseInt(rect.width), 'height': parseInt(rect.height), 'text': elementList[i].innerText};" +
                 "       } " +
                 "   } " +
-                "   return {'left': 0, 'top': 0, 'width': 0, 'height': 0}; " +
+                "   return {'left': 0, 'top': 0, 'width': 0, 'height': 0, 'text': ''}; " +
                 "})()", resultCallback);
     }
 }
